@@ -59,4 +59,9 @@ manifest 每项 `{id,type,prompt,ref_image?,seed?,width?,height?,workflow?}`。
 - edit_ref 的参数名 `prompt`（写 `text` 会 validation 400）。
 - 贴纸忘抠透明底，套不进动画。
 - edit 时没说"no text"，出来一堆乱码文字。
+- edit_ref 爱给角色**加圆形背景/徽章底图**（raptor 验证片实测 3 次里 2 次）：
+  提示词加 `keep plain solid dark background, no background graphics, no circular
+  backdrop, no halo` 也只能降低概率。**备选策略：姿态变体生成失败就放弃该图，
+  用常态图 + 动画（倾斜/压暗/缩放/光池）表达情绪**——见 character-design.md。
+- edit_ref 的姿态改动幅度要小（"arms raised" 级），大改姿势几乎必翻车。
 - 渲染时实时出图。

@@ -12,7 +12,8 @@ export const StickerImage: React.FC<{
   rotate?: number;
   float?: boolean; // 落定后轻微浮动
   noEnter?: boolean; // 跨句持续元素: 跳过入场动画直接定格
-}> = ({ src, startFrame = 0, x, y = 560, width = 460, rotate = 0, float = true, noEnter = false }) => {
+  canvasWidth?: number; // 画布宽 (默认 v916 1080)
+}> = ({ src, startFrame = 0, x, y = 560, width = 460, rotate = 0, float = true, noEnter = false, canvasWidth = 1080 }) => {
   const frame = useCurrentFrame();
   const p = noEnter ? 1 : interpolate(frame, [startFrame, startFrame + 12], [0, 1], {
     extrapolateLeft: "clamp",
@@ -20,7 +21,7 @@ export const StickerImage: React.FC<{
     easing: overshoot,
   });
   const floatY = float && p >= 1 ? Math.sin((frame - startFrame) / 18) * 10 : 0;
-  const left = (x ?? (1080 - width) / 2);
+  const left = (x ?? (canvasWidth - width) / 2);
   return (
     <Img
       src={staticFile(src)}

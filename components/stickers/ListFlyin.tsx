@@ -9,7 +9,9 @@ export const ListFlyin: React.FC<{
   color?: string;
   fontSizePx?: number;
   top?: number;
-}> = ({ items, startFrame = 0, color = "#FFFFFF", fontSizePx = 72, top = 500 }) => {
+  x?: number; // 容器 left (默认 v916 的 80)
+  width?: number; // 容器宽 (默认 v916 的 920)
+}> = ({ items, startFrame = 0, color = "#FFFFFF", fontSizePx = 72, top = 500, x = 80, width = 920 }) => {
   const frame = useCurrentFrame();
   // 错峰间隔越来越短
   const gaps = [10, 8, 6, 5, 4, 3];
@@ -20,7 +22,7 @@ export const ListFlyin: React.FC<{
     acc += gaps[Math.min(i, gaps.length - 1)];
   });
   return (
-    <div style={{ position: "absolute", top, left: 80, width: 920 }}>
+    <div style={{ position: "absolute", top, left: x, width }}>
       {items.map((it, i) => {
         const p = interpolate(frame, [starts[i], starts[i] + 10], [0, 1], {
           extrapolateLeft: "clamp",

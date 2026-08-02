@@ -4,10 +4,12 @@ import { Composition } from "remotion";
 import { Explainer } from "./Explainer";
 import { Cover } from "./Cover";
 import { shotPlans } from "./shotPlans";
+import { getCanvas } from "./helpers";
 import type { Timeline } from "./helpers";
 import timelineData from "./timeline.json";
 
 const timeline = timelineData as unknown as Timeline;
+const canvas = getCanvas(timeline);
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -30,12 +32,13 @@ export const RemotionRoot: React.FC = () => {
         component={Cover}
         durationInFrames={1}
         fps={30}
-        width={1080}
-        height={1920}
+        width={canvas.width}
+        height={canvas.height}
         defaultProps={{
-          title: "圣杯竞赛",
-          stickerSrc: "assets/sticker/rocket_sticker.png",
+          title: "圣杯对决",
+          stickerSrc: "assets/sticker/champion_idle.png",
           accentColor: "#FFD54A",
+          canvas,
         }}
       />
     </>

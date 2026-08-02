@@ -3,13 +3,16 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { KaraokeCaption, CaptionChunk } from "../caption/KaraokeCaption";
+import { CanvasSpec, CANVAS } from "../helpers";
 
 export const SlideStage: React.FC<{
   chunks: CaptionChunk[];
   bg?: string;
   captionColor?: string;
+  canvas?: CanvasSpec; // 缺省 v916 (向后兼容)
   children?: React.ReactNode;
-}> = ({ chunks, bg, captionColor, children }) => {
+}> = ({ chunks, bg, captionColor, canvas = CANVAS.v916, children }) => {
+  const { safe } = canvas;
   return (
     <AbsoluteFill
       style={{
@@ -27,7 +30,14 @@ export const SlideStage: React.FC<{
         }}
       />
       {children}
-      <KaraokeCaption chunks={chunks} activeColor={captionColor ?? "#FFD54A"} />
+      <KaraokeCaption
+        chunks={chunks}
+        activeColor={captionColor ?? "#FFD54A"}
+        x={safe.captionX}
+        y={safe.captionY}
+        width={safe.captionWidth}
+        fontSizePx={safe.captionFontSize}
+      />
     </AbsoluteFill>
   );
 };

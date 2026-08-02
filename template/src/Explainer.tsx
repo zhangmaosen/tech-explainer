@@ -6,8 +6,9 @@ import {
   Sequence,
   staticFile,
 } from "remotion";
-import { Timeline, Shot } from "./helpers";
+import { Timeline, Shot, CanvasSpec, getCanvas } from "./helpers";
 import { SlideStage } from "./stage/SlideStage";
+import { TheaterStage, TheaterCharacter } from "./stage/TheaterStage";
 import { TitlePop } from "./stickers/TitlePop";
 import { NumberRoll } from "./stickers/NumberRoll";
 import { ListFlyin } from "./stickers/ListFlyin";
@@ -15,20 +16,82 @@ import { CompareBar } from "./stickers/CompareBar";
 import { EmojiPop } from "./stickers/EmojiPop";
 import { MarkerHighlight } from "./stickers/MarkerHighlight";
 import { StickerImage } from "./stickers/StickerImage";
+import { DataCard } from "./stickers/DataCard";
+import { VersusDiagram } from "./stickers/VersusDiagram";
+import { VersusBanner } from "./skins/versus/VersusBanner";
+import { VsBadge } from "./skins/versus/VsBadge";
+import { FighterCard } from "./skins/versus/FighterCard";
+import { EvolutionChain } from "./skins/versus/EvolutionChain";
 
-// 每句的画面 = 若干层贴纸 (归项目 creative)。键 = 句号。
+// 每句的画面 = 舞台 + 若干层贴纸 (归项目 creative)。键 = 句号。
 export type Layer = { sticker: string; props: Record<string, any> };
-export type ShotPlan = { layers: Layer[]; captionColor?: string };
+export type Sfx = { src: string; frame: number }; // frame 相对该 shot
+export type TheaterPlan = {
+  characters: TheaterCharacter[];
+  skin?: string | null; // "versus" | null
+  skinProps?: Record<string, any>;
+};
+export type ShotPlan = {
+  layers: Layer[];
+  captionColor?: string;
+  theater?: TheaterPlan;
+  sfx?: Sfx[];
+};
 
-const ShotRenderer: React.FC<{ shot: Shot; plan: ShotPlan }> = ({ shot, plan }) => {
+const ShotRenderer: React.FC<{ shot: Shot; plan: ShotPlan; canvas: CanvasSpec }> = ({ shot, plan, canvas }) => {
+  const chunks = shiftChunks(shot);
+  const layers = plan.layers.map((l, i) => (
+    <React.Fragment key={i}>{renderSticker(l.sticker, l.props, shot, canvas)}</React.Fragment>
+  ));
+  if (plan.theater) {
+    return (
+      <TheaterStage
+        chunks={chunks}
+        captionColor={plan.captionColor}
+        canvas={canvas}
+        characters={plan.theater.characters}
+        skin={renderSkin(plan.theater.skin, plan.theater.skinProps ?? {}, shot, canvas)}
+      >
+        {layers}
+      </TheaterStage>
+    );
+  }
   return (
-    <SlideStage chunks={shiftChunks(shot)} captionColor={plan.captionColor}>
-      {plan.layers.map((l, i) => (
-        <React.Fragment key={i}>{renderSticker(l.sticker, l.props, shot)}</React.Fragment>
-      ))}
+    <SlideStage chunks={chunks} captionColor={plan.captionColor} canvas={canvas}>
+      {layers}
     </SlideStage>
   );
 };
+
+function renderSkin(skin: string | null | undefined, p: Record<string, any>, shot: Shot, canvas: CanvasSpec) {
+  if (skin !== "versus") return null;
+  const pinFrame = (kw?: string) => {
+    if (!kw) return undefined;
+    const pin = shot.pins.find((x) => x.keyword === kw);
+    return pin ? pin.frame - shot.fromFrame : undefined;
+  };
+  return (
+    <React.Fragment>
+      {p.banner && (
+        <VersusBanner
+          leftLabel={p.banner.leftLabel}
+          rightLabel={p.banner.rightLabel}
+          leftColor={p.banner.leftColor}
+          rightColor={p.banner.rightColor}
+          startFrame={pinFrame(p.banner.keyword) ?? p.banner.startFrame ?? 0}
+          canvasWidth={canvas.width}
+        />
+      )}
+      {p.vsBadge && (
+        <VsBadge
+          startFrame={pinFrame(p.vsBadge.keyword) ?? p.vsBadge.startFrame ?? 10}
+          y={p.vsBadge.y}
+          sizePx={p.vsBadge.sizePx}
+        />
+      )}
+    </React.Fragment>
+  );
+}
 
 function shiftChunks(shot: Shot) {
   return (shot.chunks ?? []).map((c) => ({
@@ -43,7 +106,8 @@ function shiftChunks(shot: Shot) {
   }));
 }
 
-function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
+function renderSticker(sticker: string, p: Record<string, any>, shot: Shot, canvas: CanvasSpec) {
+  const cw = canvas.width;
   // 钉帧: 只在显式给 keyword 时匹配; 否则返回 undefined 让组件用自己的 startFrame
   const pinFrame = (kw?: string) => {
     if (!kw) return undefined;
@@ -52,7 +116,7 @@ function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
   };
   switch (sticker) {
     case "title-pop":
-      return <TitlePop text={p.text} color={p.color} fontSizePx={p.fontSizePx} y={p.y} />;
+      return <TitlePop text={p.text} color={p.color} fontSizePx={p.fontSizePx} y={p.y} width={cw} />;
     case "number-roll":
       return (
         <NumberRoll
@@ -63,12 +127,13 @@ function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
           color={p.color}
           fontSizePx={p.fontSizePx}
           y={p.y}
+          width={cw}
         />
       );
     case "list-flyin":
-      return <ListFlyin items={p.items} fontSizePx={p.fontSizePx} top={p.top} />;
+      return <ListFlyin items={p.items} fontSizePx={p.fontSizePx} top={p.top} x={p.x} width={p.width} />;
     case "compare-bar":
-      return <CompareBar left={p.left} right={p.right} suffix={p.suffix} top={p.top} />;
+      return <CompareBar left={p.left} right={p.right} suffix={p.suffix} top={p.top} x={p.x} barMaxWidth={p.barMaxWidth} />;
     case "emoji-pop":
       return (
         <EmojiPop
@@ -102,6 +167,55 @@ function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
           rotate={p.rotate}
           float={p.float}
           noEnter={p.noEnter}
+          canvasWidth={cw}
+        />
+      );
+    case "data-card":
+      return (
+        <DataCard
+          title={p.title}
+          rows={p.rows}
+          x={p.x}
+          y={p.y}
+          width={p.width}
+          accentColor={p.accentColor}
+          startFrame={pinFrame(p.keyword) ?? p.startFrame ?? 0}
+        />
+      );
+    case "versus-diagram":
+      return (
+        <VersusDiagram
+          leftSrc={p.leftSrc}
+          rightSrc={p.rightSrc}
+          question={p.question}
+          imgWidth={p.imgWidth}
+          imgY={p.imgY}
+          startFrame={pinFrame(p.keyword) ?? p.startFrame ?? 0}
+          questionColor={p.questionColor}
+        />
+      );
+    case "fighter-card":
+      return (
+        <FighterCard
+          name={p.name}
+          rows={p.rows}
+          side={p.side}
+          x={p.x}
+          y={p.y}
+          width={p.width}
+          accentColor={p.accentColor}
+          startFrame={pinFrame(p.keyword) ?? p.startFrame ?? 0}
+        />
+      );
+    case "evolution-chain":
+      return (
+        <EvolutionChain
+          nodes={p.nodes}
+          x={p.x}
+          y={p.y}
+          nodeWidth={p.nodeWidth}
+          startFrame={pinFrame(p.keyword) ?? p.startFrame ?? 0}
+          accentColor={p.accentColor}
         />
       );
     default:
@@ -114,6 +228,7 @@ export const Explainer: React.FC<{
   shotPlans: Record<string, ShotPlan>;
   audioPath: string;
 }> = ({ timeline, shotPlans, audioPath }) => {
+  const canvas = getCanvas(timeline);
   return (
     <AbsoluteFill style={{ backgroundColor: "#060a12" }}>
       <Audio src={staticFile(audioPath)} />
@@ -123,7 +238,12 @@ export const Explainer: React.FC<{
           from={shot.fromFrame}
           durationInFrames={shot.durationFrames}
         >
-          <ShotRenderer shot={shot} plan={shotPlans[shot.id] ?? { layers: [] }} />
+          <ShotRenderer shot={shot} plan={shotPlans[shot.id] ?? { layers: [] }} canvas={canvas} />
+          {(shotPlans[shot.id]?.sfx ?? []).map((s, i) => (
+            <Sequence key={i} from={s.frame}>
+              <Audio src={staticFile(s.src)} volume={0.6} />
+            </Sequence>
+          ))}
         </Sequence>
       ))}
     </AbsoluteFill>

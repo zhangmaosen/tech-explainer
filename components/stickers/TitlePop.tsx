@@ -9,7 +9,8 @@ export const TitlePop: React.FC<{
   color?: string;
   fontSizePx?: number;
   y?: number;
-}> = ({ text, startFrame = 0, color = "#FFFFFF", fontSizePx = 200, y = 760 }) => {
+  width?: number; // 画布宽 (默认 v916 1080)
+}> = ({ text, startFrame = 0, color = "#FFFFFF", fontSizePx = 200, y = 760, width = 1080 }) => {
   const frame = useCurrentFrame();
   const p = enter(frame, startFrame, 16, overshoot);
   const scale = 0.6 + 0.4 * p + (p > 0.6 ? (1 - p) * 0.12 : 0); // 轻过冲
@@ -19,7 +20,7 @@ export const TitlePop: React.FC<{
         position: "absolute",
         top: y,
         left: 0,
-        width: 1080,
+        width,
         textAlign: "center",
         opacity: p,
         transform: `scale(${scale})`,

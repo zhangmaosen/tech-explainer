@@ -12,7 +12,9 @@ export const CompareBar: React.FC<{
   maxValue?: number;
   suffix?: string;
   top?: number;
-}> = ({ left, right, startFrame = 0, maxValue, suffix = "", top = 640 }) => {
+  x?: number; // 容器 left (默认 v916 的 80)
+  barMaxWidth?: number; // 条最大长 (默认 v916 的 860)
+}> = ({ left, right, startFrame = 0, maxValue, suffix = "", top = 640, x = 80, barMaxWidth = 860 }) => {
   const frame = useCurrentFrame();
   const max = maxValue ?? Math.max(left.value, right.value);
   const p = interpolate(frame, [startFrame, startFrame + 28], [0, 1], {
@@ -27,7 +29,7 @@ export const CompareBar: React.FC<{
       [0, 1],
       { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: easeOutCubic }
     );
-    const w = (s.value / max) * 860 * pp;
+    const w = (s.value / max) * barMaxWidth * pp;
     return (
       <div style={{ marginBottom: 60 }}>
         <div
@@ -73,7 +75,7 @@ export const CompareBar: React.FC<{
     );
   };
   return (
-    <div style={{ position: "absolute", top, left: 80, width: 920 }}>
+    <div style={{ position: "absolute", top, left: x, width: barMaxWidth + 260 }}>
       {Bar(left, 0)}
       {Bar(right, 8)}
     </div>

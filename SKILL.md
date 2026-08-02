@@ -1,13 +1,15 @@
 ---
 name: tech-explainer
-description: 把一篇科技或财经文章改造成面向视频号大众传播的竖屏口播解说视频（9:16 · 口播+贴纸动画）。大幅重构文章、只取一个爆点，用 Remotion 渲染、Edge TTS 词级配音、本地 ComfyUI 预生成素材。三种舞台隐喻（陈列/舞台剧/地图）。当用户要求"把这篇文章做成解说视频/科技视频号/财经短视频"，或点名 tech-explainer 时使用。Turn a tech or finance article into a vertical (9:16) narrated explainer video for social feeds: TTS voiceover + sticker animation, Remotion render, Edge TTS word-level timing, local ComfyUI pre-generated assets, three stage metaphors.
+description: 把一篇科技或财经文章改造成面向大众传播的口播解说视频（默认 16:9 横屏 · 口播+贴纸动画，画布可切 9:16/3:4）。大幅重构文章、只取一个爆点，用 Remotion 渲染、Edge TTS 词级配音、本地 ComfyUI 预生成素材。三种舞台隐喻（陈列/舞台剧/地图）。当用户要求"把这篇文章做成解说视频/科技视频号/财经短视频"，或点名 tech-explainer 时使用。Turn a tech or finance article into a narrated explainer video (16:9 landscape by default, configurable to 9:16/3:4): TTS voiceover + sticker animation, Remotion render, Edge TTS word-level timing, local ComfyUI pre-generated assets, three stage metaphors.
 ---
 
 # tech-explainer：文章 → 视频号科技解说视频
 
 一个自包含的制作能力库：把任意科技/财经文章，**大幅重构、只取一个爆点**，做成
-竖屏（1080×1920）口播解说视频。口播用 Edge TTS（返回词级时间戳），画面用贴纸
-动画（Remotion 渲染），素材用本地 ComfyUI 预生成。三种舞台隐喻可选。
+口播解说视频。**画布三预设：h169 横屏 1920×1080（默认主力）/ v916 竖屏 1080×1920 /
+v34 折中**，由 timeline 的 `canvas` 字段驱动，版式规范见 `references/layouts/h169.md`。
+口播用 Edge TTS（返回词级时间戳），画面用贴纸动画（Remotion 渲染），素材用本地
+ComfyUI 预生成。三种舞台隐喻可选。
 
 **核心目标**：产出**符合视频号爆款方法论**的高质量成片——不承诺具体流量数字，
 skill 能控制的是钩子、结构、节奏、信息密度、情绪曲线、可读性和音画钉帧。
@@ -36,8 +38,8 @@ skill 能控制的是钩子、结构、节奏、信息密度、情绪曲线、�
 6. **抽卡适配，不从零写。** 贴纸/舞台组件是预制的（`components/` + `sticker-cards/`
    配方卡）。Claude 每个镜头"抽卡+适配参数"，不每次现写 TSX——这是低成本的前提。
 
-7. **竖屏可读性是硬门槛。** 视频号很多人静音刷，字幕必须硬烧、够大（见
-   `caption-rules.md`）；黄金 3 秒钩子决定完播。
+7. **字幕可读性是硬门槛。** 很多人静音刷，字幕必须硬烧、够大（见
+   `caption-rules.md`，各画布预设同标准）；黄金 3 秒钩子决定完播。
 
 8. **确定性渲染**：禁 `Date.now()`/`Math.random()`，一切伪随机固定种子。
 
@@ -47,8 +49,10 @@ skill 能控制的是钩子、结构、节奏、信息密度、情绪曲线、�
 
 - **陈列类 Slide**（`stages/slide.md`）：平面、无纵深、元素逐条陈列。适合
   **数据罗列、参数对比、观点并列、榜单**。最稳，第一版主力。
-- **舞台剧类 Theater**（`stages/theater.md`）：固定机位单目舞台，角色贴纸进出场、
-  聚光灯、对话气泡。适合**冲突、博弈、拟人化叙事**（如把两方力量拟人对台）。
+- **舞台剧类 Theater**（`stages/theater.md`）：固定机位单目舞台（通用底盘：多层
+  布景+角色调度+聚光灯），角色贴纸进出场。适合**冲突、博弈、拟人化叙事**。
+  第一套皮肤 **versus**（`skins/versus.md`：对决横幅/VS徽章/角色卡/进化链）；
+  拟人角色设计见 `character-design.md`。
 - **地图引导类 Map**（`stages/map.md`）：大画布 + 镜头沿路径平移缩放，节点讲段落。
   适合**流程、发展史、因果链条、"一步步带你走"**。
 
@@ -60,12 +64,12 @@ skill 能控制的是钩子、结构、节奏、信息密度、情绪曲线、�
 
 | 阶段 | 做什么 | 读 |
 |------|--------|----|
-| 0 文章理解与爆点提取 | 抽唯一爆点、定钩子/受众/情绪/舞台类型 | hook-and-script.md |
+| 0 文章理解与爆点提取 | 抽唯一爆点、定钩子/受众/情绪/舞台类型/**画布** | hook-and-script.md, layouts/ |
 | 1 脚本创作 | 视频号结构口播稿，短句，60–120s | hook-and-script.md |
-| 2 分镜设计 | 短句→贴纸配方卡+画面+字幕+关键词钉帧+素材清单+角色设定表 | stages/*, sticker-cards/ |
-| 3 素材预生成 | ComfyUI 一次性出图 + 参考图锁一致性 | comfyui-assets.md |
+| 2 分镜设计 | 短句→舞台/皮肤/贴纸配方卡+画面+字幕+关键词钉帧+素材清单+角色设定表 | stages/*, skins/*, sticker-cards/ |
+| 3 素材预生成 | ComfyUI 一次性出图 + 参考图锁一致性 | comfyui-assets.md, character-design.md |
 | 4 配音与时间轴 | 逐句 Edge TTS→词级时间戳→回填帧级时间轴 | tts-timing.md |
-| 5 Remotion 渲染 | 抽舞台+贴纸组件适配，卡拉OK字幕，竖屏 | stages/*, caption-rules.md |
+| 5 Remotion 渲染 | 抽舞台+贴纸组件适配，卡拉OK字幕，画布预设 | stages/*, layouts/*, caption-rules.md |
 | 6 自检 | 对照爆款准则逐条过，带帧号报告 | douyin-video-rules.md |
 
 ## 何时读哪个文件
@@ -74,7 +78,9 @@ skill 能控制的是钩子、结构、节奏、信息密度、情绪曲线、�
 |------|----|
 | 项目启动 | pipeline.md 全文 |
 | 爆点提取 + 写稿 | hook-and-script.md |
-| 判断舞台类型 + 分镜 | stages/ 三个规范 + sticker-cards/ 全部 frontmatter |
+| 判断舞台类型 + 分镜 | stages/ 三个规范 + skins/ + sticker-cards/ 全部 frontmatter |
+| 选画布/横竖屏版式 | layouts/h169.md（含竖屏附录） |
+| 拟人角色设计 | character-design.md |
 | 逐镜头实现 | 选中的配方卡全文 + 对应 components/ 组件 |
 | 配音与时间轴 | tts-timing.md |
 | 素材预生成 | comfyui-assets.md |
@@ -88,13 +94,13 @@ skill 能控制的是钩子、结构、节奏、信息密度、情绪曲线、�
   后端可切 `edge`（默认）/ `local_http`（后期）。失败单句重试。
 - `scripts/comfyui_client.py` — ComfyUI HTTP 适配层 + 预生成编排 + 参考图一致性。
 - `scripts/build_timeline.py` — 把逐句词级时间戳合成为帧级时间轴 json
-  （字幕锚点 + 贴纸钉帧锚点），供 Remotion 读取。
+  （字幕锚点 + 贴纸钉帧锚点），供 Remotion 读取；`--canvas` 选画布预设。
 
 ## 资产使用方式
 
 - `components/` 组件 **copy 进 Remotion 工程**后适配，不 import 本库。
-- `template/` 是一支验收过的 Slide 完整样片，换素材复现最快。
-- 音频 `assets/audio/`、字体 `assets/fonts/` 直接复制。
+- `template/` 是一支验收过的 Theater(versus)+Slide 混合样片（h169），换素材复现最快。
+- 音频 `assets/audio/`、字体 `assets/fonts/`、音效 `assets/sfx/` 直接复制。
 
 ## 迭代与打磨纪律（保证通用性）
 

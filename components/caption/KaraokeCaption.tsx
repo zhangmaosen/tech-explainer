@@ -19,6 +19,8 @@ export const KaraokeCaption: React.FC<{
   fontSizePx?: number;
   strokePx?: number;
   y?: number;
+  x?: number; // 字幕容器 left (默认 v916 的 30)
+  width?: number; // 字幕容器宽 (默认 v916 的 1020)
 }> = ({
   chunks,
   activeColor = "#FFD54A",
@@ -27,6 +29,8 @@ export const KaraokeCaption: React.FC<{
   fontSizePx = 72,
   strokePx = 4,
   y = 1420,
+  x = 30,
+  width = 1020,
 }) => {
   const frame = useCurrentFrame();
   // 当前组: frame 落在组内; 间隙期取最近一组(已完成则最后一组, 未开始则第一组)
@@ -43,8 +47,8 @@ export const KaraokeCaption: React.FC<{
       style={{
         position: "absolute",
         top: y,
-        left: 30,
-        width: 1020,
+        left: x,
+        width,
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",

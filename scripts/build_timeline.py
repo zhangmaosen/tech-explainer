@@ -73,6 +73,9 @@ def chunk_words(words_abs, max_chars=13):
 def main(a):
     fps = a.fps
     gap = a.gap_frames
+    CANVAS_DIMS = {"h169": (1920, 1080), "v916": (1080, 1920), "v34": (1080, 1440)}
+    canvas_id = a.canvas
+    width, height = CANVAS_DIMS[canvas_id]
     with open(a.clips, encoding="utf-8") as f:
         clips = json.load(f)
     sb = {}
@@ -128,7 +131,8 @@ def main(a):
             concat_parts.append(sil)
             cursor += gap
 
-    timeline = {"fps": fps, "width": 1080, "height": 1920,
+    timeline = {"fps": fps, "width": width, "height": height,
+                "canvas": canvas_id,
                 "totalFrames": cursor, "audioTrack": "audio/full.mp3",
                 "shots": shots}
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
@@ -158,6 +162,8 @@ if __name__ == "__main__":
     p.add_argument("--out", required=True)
     p.add_argument("--audio-out", default=None)
     p.add_argument("--fps", type=int, default=30)
+    p.add_argument("--canvas", default="h169", choices=["h169", "v916", "v34"],
+                   help="画布预设 (默认 h169 横屏; v916 竖屏信息流; v34 折中)")
     p.add_argument("--gap-frames", type=int, default=8)
     p.add_argument("--max-chars", type=int, default=13,
                    help="字幕每组最大字数 (单行快翻)")

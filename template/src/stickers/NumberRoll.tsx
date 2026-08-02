@@ -12,6 +12,7 @@ export const NumberRoll: React.FC<{
   color?: string;
   fontSizePx?: number;
   y?: number;
+  width?: number; // 画布宽 (默认 v916 1080)
 }> = ({
   target,
   hitFrame,
@@ -21,6 +22,7 @@ export const NumberRoll: React.FC<{
   color = "#FFD54A",
   fontSizePx = 180,
   y = 820,
+  width = 1080,
 }) => {
   const frame = useCurrentFrame();
   const start = hitFrame - rollFrames;
@@ -38,7 +40,7 @@ export const NumberRoll: React.FC<{
         position: "absolute",
         top: y,
         left: 0,
-        width: 1080,
+        width,
         textAlign: "center",
         opacity: appear,
         transform: `scale(${pop})`,

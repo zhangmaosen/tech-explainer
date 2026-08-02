@@ -1,7 +1,8 @@
 {
   "fps": 30,
-  "width": 1080,
-  "height": 1920,
+  "width": 1920,
+  "height": 1080,
+  "canvas": "h169",
   "totalFrames": 3195,
   "audioTrack": "audio/full.mp3",
   "shots": [
@@ -10,7 +11,7 @@
       "text": "火箭发动机的圣杯，全世界追了六十年，只有一家公司真正抢到手。",
       "fromFrame": 0,
       "durationFrames": 186,
-      "stage": "slide",
+      "stage": "theater",
       "sticker": "sticker-image",
       "words": [
         {
@@ -211,7 +212,7 @@
       "text": "现在，中国正带着一整支队伍，发起冲锋。",
       "fromFrame": 194,
       "durationFrames": 132,
-      "stage": "slide",
+      "stage": "theater",
       "sticker": "sticker-image",
       "words": [
         {
@@ -341,7 +342,13 @@
           ]
         }
       ],
-      "pins": [],
+      "pins": [
+        {
+          "keyword": "冲锋",
+          "sticker": "vs-badge",
+          "frame": 289
+        }
+      ],
       "audio": "S02.mp3"
     },
     {
@@ -441,7 +448,7 @@
       "fromFrame": 446,
       "durationFrames": 195,
       "stage": "slide",
-      "sticker": "flow-diagram",
+      "sticker": "sticker-image",
       "words": [
         {
           "text": "普通",
@@ -649,9 +656,9 @@
       ],
       "pins": [
         {
-          "keyword": "烧掉",
+          "keyword": "漏油",
           "sticker": "marker-highlight",
-          "frame": 504
+          "frame": 605
         }
       ],
       "audio": "S04.mp3"
@@ -662,7 +669,7 @@
       "fromFrame": 649,
       "durationFrames": 233,
       "stage": "slide",
-      "sticker": "flow-diagram",
+      "sticker": "versus-diagram",
       "words": [
         {
           "text": "而",
@@ -918,18 +925,7 @@
           ]
         }
       ],
-      "pins": [
-        {
-          "keyword": "涡轮",
-          "sticker": "marker-highlight",
-          "frame": 745
-        },
-        {
-          "keyword": "燃烧室",
-          "sticker": "marker-highlight",
-          "frame": 793
-        }
-      ],
+      "pins": [],
       "audio": "S05.mp3"
     },
     {
@@ -1109,9 +1105,9 @@
       ],
       "pins": [
         {
-          "keyword": "金属",
+          "keyword": "烧起来",
           "sticker": "emoji-pop",
-          "frame": 966
+          "frame": 1001
         }
       ],
       "audio": "S06.mp3"
@@ -1122,7 +1118,7 @@
       "fromFrame": 1048,
       "durationFrames": 159,
       "stage": "slide",
-      "sticker": "title-pop",
+      "sticker": "list-flyin",
       "words": [
         {
           "text": "所以",
@@ -1310,7 +1306,7 @@
       "fromFrame": 1215,
       "durationFrames": 235,
       "stage": "slide",
-      "sticker": "number-roll",
+      "sticker": "data-card",
       "words": [
         {
           "text": "SpaceX",
@@ -1536,7 +1532,7 @@
       "pins": [
         {
           "keyword": "八百三十",
-          "sticker": "number-roll",
+          "sticker": "data-card",
           "frame": 1347
         }
       ],
@@ -1729,7 +1725,7 @@
       "fromFrame": 1654,
       "durationFrames": 192,
       "stage": "slide",
-      "sticker": "number-roll",
+      "sticker": "compare-bar",
       "words": [
         {
           "text": "更",
@@ -1925,13 +1921,7 @@
           ]
         }
       ],
-      "pins": [
-        {
-          "keyword": "两头",
-          "sticker": "number-roll",
-          "frame": 1799
-        }
-      ],
+      "pins": [],
       "audio": "S10.mp3"
     },
     {
@@ -1940,7 +1930,7 @@
       "fromFrame": 1854,
       "durationFrames": 226,
       "stage": "slide",
-      "sticker": "number-roll",
+      "sticker": "evolution-chain",
       "words": [
         {
           "text": "成本",
@@ -2199,7 +2189,7 @@
       "pins": [
         {
           "keyword": "一百万",
-          "sticker": "number-roll",
+          "sticker": "evolution-chain",
           "frame": 2032
         }
       ],
@@ -2210,8 +2200,8 @@
       "text": "中国的打法，是国家队加民营双轨冲刺。",
       "fromFrame": 2088,
       "durationFrames": 129,
-      "stage": "slide",
-      "sticker": "list-flyin",
+      "stage": "theater",
+      "sticker": null,
       "words": [
         {
           "text": "中国",
@@ -2328,8 +2318,8 @@
       "text": "国家队的王牌是YF二一五，二百吨级，专为长征九号重型火箭打造。",
       "fromFrame": 2225,
       "durationFrames": 202,
-      "stage": "slide",
-      "sticker": "title-pop",
+      "stage": "theater",
+      "sticker": "fighter-card",
       "words": [
         {
           "text": "国家队",
@@ -2528,7 +2518,7 @@
       "pins": [
         {
           "keyword": "二一五",
-          "sticker": "title-pop",
+          "sticker": "fighter-card",
           "frame": 2282
         }
       ],
@@ -2892,8 +2882,8 @@
       "text": "二零二六到二零二七，多款发动机整机试车，这场圣杯之争就要见分晓。",
       "fromFrame": 2850,
       "durationFrames": 186,
-      "stage": "slide",
-      "sticker": "title-pop",
+      "stage": "theater",
+      "sticker": null,
       "words": [
         {
           "text": "二零二六",
