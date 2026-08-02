@@ -1,0 +1,1089 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 2312,
+  "audioTrack": "audio/full.mp3",
+  "shots": [
+    {
+      "id": "S01",
+      "text": "火箭发动机的终极圣杯，全世界搞了六十年，只有一家公司做成了。",
+      "fromFrame": 0,
+      "durationFrames": 174,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "火箭",
+          "fromFrame": 3,
+          "toFrame": 14
+        },
+        {
+          "text": "发动机",
+          "fromFrame": 15,
+          "toFrame": 26
+        },
+        {
+          "text": "的",
+          "fromFrame": 26,
+          "toFrame": 31
+        },
+        {
+          "text": "终极",
+          "fromFrame": 32,
+          "toFrame": 42
+        },
+        {
+          "text": "圣",
+          "fromFrame": 42,
+          "toFrame": 48
+        },
+        {
+          "text": "杯",
+          "fromFrame": 48,
+          "toFrame": 56
+        },
+        {
+          "text": "全世界",
+          "fromFrame": 64,
+          "toFrame": 81
+        },
+        {
+          "text": "搞",
+          "fromFrame": 82,
+          "toFrame": 86
+        },
+        {
+          "text": "了",
+          "fromFrame": 86,
+          "toFrame": 88
+        },
+        {
+          "text": "六十",
+          "fromFrame": 88,
+          "toFrame": 96
+        },
+        {
+          "text": "年",
+          "fromFrame": 96,
+          "toFrame": 105
+        },
+        {
+          "text": "只有",
+          "fromFrame": 111,
+          "toFrame": 118
+        },
+        {
+          "text": "一家",
+          "fromFrame": 118,
+          "toFrame": 127
+        },
+        {
+          "text": "公司",
+          "fromFrame": 127,
+          "toFrame": 135
+        },
+        {
+          "text": "做成",
+          "fromFrame": 136,
+          "toFrame": 144
+        },
+        {
+          "text": "了",
+          "fromFrame": 144,
+          "toFrame": 149
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "圣杯",
+          "sticker": "title-pop",
+          "frame": 42
+        }
+      ],
+      "audio": "S01.mp3"
+    },
+    {
+      "id": "S02",
+      "text": "而现在，中国正带着一整支队伍，向它发起冲锋。",
+      "fromFrame": 182,
+      "durationFrames": 143,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "而",
+          "fromFrame": 185,
+          "toFrame": 188
+        },
+        {
+          "text": "现在",
+          "fromFrame": 189,
+          "toFrame": 204
+        },
+        {
+          "text": "中国",
+          "fromFrame": 214,
+          "toFrame": 226
+        },
+        {
+          "text": "正",
+          "fromFrame": 227,
+          "toFrame": 232
+        },
+        {
+          "text": "带",
+          "fromFrame": 232,
+          "toFrame": 235
+        },
+        {
+          "text": "着",
+          "fromFrame": 235,
+          "toFrame": 238
+        },
+        {
+          "text": "一",
+          "fromFrame": 238,
+          "toFrame": 243
+        },
+        {
+          "text": "整支",
+          "fromFrame": 243,
+          "toFrame": 253
+        },
+        {
+          "text": "队伍",
+          "fromFrame": 253,
+          "toFrame": 264
+        },
+        {
+          "text": "向",
+          "fromFrame": 269,
+          "toFrame": 276
+        },
+        {
+          "text": "它",
+          "fromFrame": 276,
+          "toFrame": 278
+        },
+        {
+          "text": "发起",
+          "fromFrame": 279,
+          "toFrame": 287
+        },
+        {
+          "text": "冲锋",
+          "fromFrame": 288,
+          "toFrame": 300
+        }
+      ],
+      "pins": [],
+      "audio": "S02.mp3"
+    },
+    {
+      "id": "S03",
+      "text": "这个圣杯，叫全流量分级燃烧。",
+      "fromFrame": 333,
+      "durationFrames": 104,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "这个",
+          "fromFrame": 336,
+          "toFrame": 342
+        },
+        {
+          "text": "圣",
+          "fromFrame": 343,
+          "toFrame": 349
+        },
+        {
+          "text": "杯",
+          "fromFrame": 349,
+          "toFrame": 358
+        },
+        {
+          "text": "叫",
+          "fromFrame": 362,
+          "toFrame": 369
+        },
+        {
+          "text": "全流量",
+          "fromFrame": 370,
+          "toFrame": 386
+        },
+        {
+          "text": "分级",
+          "fromFrame": 386,
+          "toFrame": 398
+        },
+        {
+          "text": "燃烧",
+          "fromFrame": 399,
+          "toFrame": 413
+        }
+      ],
+      "pins": [],
+      "audio": "S03.mp3"
+    },
+    {
+      "id": "S04",
+      "text": "简单说，就是把火箭燃料百分之百榨干，一滴都不浪费。",
+      "fromFrame": 445,
+      "durationFrames": 152,
+      "stage": "slide",
+      "sticker": "marker-highlight",
+      "words": [
+        {
+          "text": "简单",
+          "fromFrame": 448,
+          "toFrame": 459
+        },
+        {
+          "text": "说",
+          "fromFrame": 459,
+          "toFrame": 468
+        },
+        {
+          "text": "就",
+          "fromFrame": 475,
+          "toFrame": 480
+        },
+        {
+          "text": "是",
+          "fromFrame": 480,
+          "toFrame": 482
+        },
+        {
+          "text": "把",
+          "fromFrame": 482,
+          "toFrame": 485
+        },
+        {
+          "text": "火箭",
+          "fromFrame": 486,
+          "toFrame": 497
+        },
+        {
+          "text": "燃料",
+          "fromFrame": 498,
+          "toFrame": 507
+        },
+        {
+          "text": "百分之百",
+          "fromFrame": 508,
+          "toFrame": 524
+        },
+        {
+          "text": "榨干",
+          "fromFrame": 524,
+          "toFrame": 536
+        },
+        {
+          "text": "一",
+          "fromFrame": 546,
+          "toFrame": 552
+        },
+        {
+          "text": "滴",
+          "fromFrame": 552,
+          "toFrame": 556
+        },
+        {
+          "text": "都",
+          "fromFrame": 556,
+          "toFrame": 559
+        },
+        {
+          "text": "不",
+          "fromFrame": 559,
+          "toFrame": 561
+        },
+        {
+          "text": "浪费",
+          "fromFrame": 561,
+          "toFrame": 572
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "百分之百",
+          "sticker": "marker-highlight",
+          "frame": 508
+        }
+      ],
+      "audio": "S04.mp3"
+    },
+    {
+      "id": "S05",
+      "text": "运载能力，直接提升百分之二十。",
+      "fromFrame": 605,
+      "durationFrames": 100,
+      "stage": "slide",
+      "sticker": "number-roll",
+      "words": [
+        {
+          "text": "运载",
+          "fromFrame": 608,
+          "toFrame": 618
+        },
+        {
+          "text": "能力",
+          "fromFrame": 618,
+          "toFrame": 631
+        },
+        {
+          "text": "直接",
+          "fromFrame": 639,
+          "toFrame": 648
+        },
+        {
+          "text": "提升",
+          "fromFrame": 648,
+          "toFrame": 658
+        },
+        {
+          "text": "百分之二十",
+          "fromFrame": 658,
+          "toFrame": 680
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "二十",
+          "sticker": "number-roll",
+          "frame": 658
+        }
+      ],
+      "audio": "S05.mp3"
+    },
+    {
+      "id": "S06",
+      "text": "美国的SpaceX，用猛禽发动机第一个撞开了这扇门。",
+      "fromFrame": 713,
+      "durationFrames": 139,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "美国",
+          "fromFrame": 716,
+          "toFrame": 726
+        },
+        {
+          "text": "的",
+          "fromFrame": 726,
+          "toFrame": 729
+        },
+        {
+          "text": "SpaceX",
+          "fromFrame": 730,
+          "toFrame": 753
+        },
+        {
+          "text": "用",
+          "fromFrame": 758,
+          "toFrame": 762
+        },
+        {
+          "text": "猛禽",
+          "fromFrame": 762,
+          "toFrame": 772
+        },
+        {
+          "text": "发动机",
+          "fromFrame": 772,
+          "toFrame": 788
+        },
+        {
+          "text": "第一个",
+          "fromFrame": 791,
+          "toFrame": 801
+        },
+        {
+          "text": "撞开",
+          "fromFrame": 802,
+          "toFrame": 811
+        },
+        {
+          "text": "了",
+          "fromFrame": 811,
+          "toFrame": 813
+        },
+        {
+          "text": "这",
+          "fromFrame": 813,
+          "toFrame": 816
+        },
+        {
+          "text": "扇",
+          "fromFrame": 816,
+          "toFrame": 820
+        },
+        {
+          "text": "门",
+          "fromFrame": 820,
+          "toFrame": 828
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "SpaceX",
+          "sticker": "emoji-pop",
+          "frame": 730
+        }
+      ],
+      "audio": "S06.mp3"
+    },
+    {
+      "id": "S07",
+      "text": "最新的猛禽三号，海平面推力二百八十吨，室压三百五十bar，都是世界纪录。",
+      "fromFrame": 860,
+      "durationFrames": 202,
+      "stage": "slide",
+      "sticker": "number-roll",
+      "words": [
+        {
+          "text": "最新",
+          "fromFrame": 863,
+          "toFrame": 875
+        },
+        {
+          "text": "的",
+          "fromFrame": 875,
+          "toFrame": 879
+        },
+        {
+          "text": "猛禽",
+          "fromFrame": 880,
+          "toFrame": 889
+        },
+        {
+          "text": "三号",
+          "fromFrame": 889,
+          "toFrame": 902
+        },
+        {
+          "text": "海平面",
+          "fromFrame": 911,
+          "toFrame": 927
+        },
+        {
+          "text": "推力",
+          "fromFrame": 927,
+          "toFrame": 937
+        },
+        {
+          "text": "二百八十",
+          "fromFrame": 938,
+          "toFrame": 952
+        },
+        {
+          "text": "吨",
+          "fromFrame": 952,
+          "toFrame": 959
+        },
+        {
+          "text": "室压",
+          "fromFrame": 967,
+          "toFrame": 978
+        },
+        {
+          "text": "三百五十",
+          "fromFrame": 979,
+          "toFrame": 994
+        },
+        {
+          "text": "bar",
+          "fromFrame": 994,
+          "toFrame": 1003
+        },
+        {
+          "text": "都",
+          "fromFrame": 1008,
+          "toFrame": 1013
+        },
+        {
+          "text": "是",
+          "fromFrame": 1013,
+          "toFrame": 1019
+        },
+        {
+          "text": "世界纪录",
+          "fromFrame": 1019,
+          "toFrame": 1038
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "二百八十",
+          "sticker": "number-roll",
+          "frame": 938
+        }
+      ],
+      "audio": "S07.mp3"
+    },
+    {
+      "id": "S08",
+      "text": "马斯克的目标更狠，单台成本压到一百万美元以下。",
+      "fromFrame": 1070,
+      "durationFrames": 136,
+      "stage": "slide",
+      "sticker": "number-roll",
+      "words": [
+        {
+          "text": "马斯",
+          "fromFrame": 1073,
+          "toFrame": 1082
+        },
+        {
+          "text": "克",
+          "fromFrame": 1082,
+          "toFrame": 1084
+        },
+        {
+          "text": "的",
+          "fromFrame": 1084,
+          "toFrame": 1086
+        },
+        {
+          "text": "目标",
+          "fromFrame": 1086,
+          "toFrame": 1094
+        },
+        {
+          "text": "更",
+          "fromFrame": 1095,
+          "toFrame": 1100
+        },
+        {
+          "text": "狠",
+          "fromFrame": 1100,
+          "toFrame": 1108
+        },
+        {
+          "text": "单台",
+          "fromFrame": 1119,
+          "toFrame": 1128
+        },
+        {
+          "text": "成本",
+          "fromFrame": 1128,
+          "toFrame": 1141
+        },
+        {
+          "text": "压到",
+          "fromFrame": 1141,
+          "toFrame": 1151
+        },
+        {
+          "text": "一百万",
+          "fromFrame": 1151,
+          "toFrame": 1162
+        },
+        {
+          "text": "美元",
+          "fromFrame": 1163,
+          "toFrame": 1170
+        },
+        {
+          "text": "以下",
+          "fromFrame": 1170,
+          "toFrame": 1181
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "一百万",
+          "sticker": "number-roll",
+          "frame": 1151
+        }
+      ],
+      "audio": "S08.mp3"
+    },
+    {
+      "id": "S09",
+      "text": "面对代差，中国怎么打？答案是国家队加民营，双轨齐上。",
+      "fromFrame": 1214,
+      "durationFrames": 193,
+      "stage": "slide",
+      "sticker": "list-flyin",
+      "words": [
+        {
+          "text": "面对",
+          "fromFrame": 1217,
+          "toFrame": 1226
+        },
+        {
+          "text": "代差",
+          "fromFrame": 1226,
+          "toFrame": 1240
+        },
+        {
+          "text": "中国",
+          "fromFrame": 1250,
+          "toFrame": 1260
+        },
+        {
+          "text": "怎么",
+          "fromFrame": 1260,
+          "toFrame": 1265
+        },
+        {
+          "text": "打",
+          "fromFrame": 1265,
+          "toFrame": 1272
+        },
+        {
+          "text": "答案",
+          "fromFrame": 1288,
+          "toFrame": 1298
+        },
+        {
+          "text": "是",
+          "fromFrame": 1298,
+          "toFrame": 1308
+        },
+        {
+          "text": "国家队",
+          "fromFrame": 1312,
+          "toFrame": 1330
+        },
+        {
+          "text": "加",
+          "fromFrame": 1331,
+          "toFrame": 1337
+        },
+        {
+          "text": "民营",
+          "fromFrame": 1337,
+          "toFrame": 1350
+        },
+        {
+          "text": "双轨",
+          "fromFrame": 1355,
+          "toFrame": 1370
+        },
+        {
+          "text": "齐",
+          "fromFrame": 1370,
+          "toFrame": 1376
+        },
+        {
+          "text": "上",
+          "fromFrame": 1376,
+          "toFrame": 1383
+        }
+      ],
+      "pins": [],
+      "audio": "S09.mp3"
+    },
+    {
+      "id": "S10",
+      "text": "国家队的王牌，是二百吨级的YF二一五，专为长征九号重型火箭打造。",
+      "fromFrame": 1415,
+      "durationFrames": 202,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "国家队",
+          "fromFrame": 1418,
+          "toFrame": 1429
+        },
+        {
+          "text": "的",
+          "fromFrame": 1429,
+          "toFrame": 1431
+        },
+        {
+          "text": "王牌",
+          "fromFrame": 1432,
+          "toFrame": 1447
+        },
+        {
+          "text": "是",
+          "fromFrame": 1449,
+          "toFrame": 1457
+        },
+        {
+          "text": "二百",
+          "fromFrame": 1457,
+          "toFrame": 1466
+        },
+        {
+          "text": "吨",
+          "fromFrame": 1466,
+          "toFrame": 1470
+        },
+        {
+          "text": "级",
+          "fromFrame": 1470,
+          "toFrame": 1474
+        },
+        {
+          "text": "的",
+          "fromFrame": 1474,
+          "toFrame": 1481
+        },
+        {
+          "text": "YF",
+          "fromFrame": 1484,
+          "toFrame": 1502
+        },
+        {
+          "text": "二一五",
+          "fromFrame": 1503,
+          "toFrame": 1517
+        },
+        {
+          "text": "专",
+          "fromFrame": 1527,
+          "toFrame": 1533
+        },
+        {
+          "text": "为",
+          "fromFrame": 1533,
+          "toFrame": 1538
+        },
+        {
+          "text": "长征",
+          "fromFrame": 1538,
+          "toFrame": 1550
+        },
+        {
+          "text": "九号",
+          "fromFrame": 1550,
+          "toFrame": 1562
+        },
+        {
+          "text": "重型",
+          "fromFrame": 1563,
+          "toFrame": 1572
+        },
+        {
+          "text": "火箭",
+          "fromFrame": 1572,
+          "toFrame": 1581
+        },
+        {
+          "text": "打造",
+          "fromFrame": 1582,
+          "toFrame": 1592
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "二一五",
+          "sticker": "title-pop",
+          "frame": 1503
+        }
+      ],
+      "audio": "S10.mp3"
+    },
+    {
+      "id": "S11",
+      "text": "民营这边更是全线爆发，蓝箭、星梭、火圣同时冲刺。",
+      "fromFrame": 1625,
+      "durationFrames": 179,
+      "stage": "slide",
+      "sticker": "list-flyin",
+      "words": [
+        {
+          "text": "民营",
+          "fromFrame": 1628,
+          "toFrame": 1637
+        },
+        {
+          "text": "这边",
+          "fromFrame": 1637,
+          "toFrame": 1650
+        },
+        {
+          "text": "更",
+          "fromFrame": 1653,
+          "toFrame": 1658
+        },
+        {
+          "text": "是",
+          "fromFrame": 1658,
+          "toFrame": 1662
+        },
+        {
+          "text": "全线",
+          "fromFrame": 1662,
+          "toFrame": 1673
+        },
+        {
+          "text": "爆发",
+          "fromFrame": 1673,
+          "toFrame": 1686
+        },
+        {
+          "text": "蓝箭",
+          "fromFrame": 1695,
+          "toFrame": 1709
+        },
+        {
+          "text": "星梭",
+          "fromFrame": 1719,
+          "toFrame": 1735
+        },
+        {
+          "text": "火圣",
+          "fromFrame": 1744,
+          "toFrame": 1757
+        },
+        {
+          "text": "同时",
+          "fromFrame": 1757,
+          "toFrame": 1768
+        },
+        {
+          "text": "冲刺",
+          "fromFrame": 1768,
+          "toFrame": 1780
+        }
+      ],
+      "pins": [],
+      "audio": "S11.mp3"
+    },
+    {
+      "id": "S12",
+      "text": "从材料到3D打印，中国正在飞快抹平这道代差。",
+      "fromFrame": 1812,
+      "durationFrames": 145,
+      "stage": "slide",
+      "sticker": "compare-bar",
+      "words": [
+        {
+          "text": "从",
+          "fromFrame": 1815,
+          "toFrame": 1821
+        },
+        {
+          "text": "材料",
+          "fromFrame": 1821,
+          "toFrame": 1833
+        },
+        {
+          "text": "到",
+          "fromFrame": 1834,
+          "toFrame": 1837
+        },
+        {
+          "text": "3",
+          "fromFrame": 1838,
+          "toFrame": 1844
+        },
+        {
+          "text": "D",
+          "fromFrame": 1844,
+          "toFrame": 1847
+        },
+        {
+          "text": "打印",
+          "fromFrame": 1848,
+          "toFrame": 1859
+        },
+        {
+          "text": "中国",
+          "fromFrame": 1869,
+          "toFrame": 1882
+        },
+        {
+          "text": "正在",
+          "fromFrame": 1883,
+          "toFrame": 1891
+        },
+        {
+          "text": "飞快",
+          "fromFrame": 1891,
+          "toFrame": 1901
+        },
+        {
+          "text": "抹平",
+          "fromFrame": 1901,
+          "toFrame": 1913
+        },
+        {
+          "text": "这",
+          "fromFrame": 1913,
+          "toFrame": 1918
+        },
+        {
+          "text": "道",
+          "fromFrame": 1918,
+          "toFrame": 1920
+        },
+        {
+          "text": "代差",
+          "fromFrame": 1921,
+          "toFrame": 1933
+        }
+      ],
+      "pins": [],
+      "audio": "S12.mp3"
+    },
+    {
+      "id": "S13",
+      "text": "二零二六到二零二七，多款发动机进入试车，胜负就在眼前。",
+      "fromFrame": 1965,
+      "durationFrames": 158,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "二零二六",
+          "fromFrame": 1968,
+          "toFrame": 1984
+        },
+        {
+          "text": "到",
+          "fromFrame": 1984,
+          "toFrame": 1988
+        },
+        {
+          "text": "二零二七",
+          "fromFrame": 1988,
+          "toFrame": 2008
+        },
+        {
+          "text": "多",
+          "fromFrame": 2017,
+          "toFrame": 2021
+        },
+        {
+          "text": "款",
+          "fromFrame": 2021,
+          "toFrame": 2025
+        },
+        {
+          "text": "发动机",
+          "fromFrame": 2026,
+          "toFrame": 2039
+        },
+        {
+          "text": "进入",
+          "fromFrame": 2039,
+          "toFrame": 2046
+        },
+        {
+          "text": "试车",
+          "fromFrame": 2046,
+          "toFrame": 2060
+        },
+        {
+          "text": "胜负",
+          "fromFrame": 2064,
+          "toFrame": 2078
+        },
+        {
+          "text": "就",
+          "fromFrame": 2079,
+          "toFrame": 2082
+        },
+        {
+          "text": "在",
+          "fromFrame": 2082,
+          "toFrame": 2085
+        },
+        {
+          "text": "眼前",
+          "fromFrame": 2085,
+          "toFrame": 2098
+        }
+      ],
+      "pins": [],
+      "audio": "S13.mp3"
+    },
+    {
+      "id": "S14",
+      "text": "你觉得这场圣杯之争，谁能笑到最后？评论区聊聊。",
+      "fromFrame": 2131,
+      "durationFrames": 173,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "你",
+          "fromFrame": 2134,
+          "toFrame": 2139
+        },
+        {
+          "text": "觉得",
+          "fromFrame": 2139,
+          "toFrame": 2154
+        },
+        {
+          "text": "这",
+          "fromFrame": 2157,
+          "toFrame": 2165
+        },
+        {
+          "text": "场",
+          "fromFrame": 2165,
+          "toFrame": 2169
+        },
+        {
+          "text": "圣",
+          "fromFrame": 2170,
+          "toFrame": 2177
+        },
+        {
+          "text": "杯",
+          "fromFrame": 2177,
+          "toFrame": 2181
+        },
+        {
+          "text": "之",
+          "fromFrame": 2181,
+          "toFrame": 2185
+        },
+        {
+          "text": "争",
+          "fromFrame": 2185,
+          "toFrame": 2194
+        },
+        {
+          "text": "谁",
+          "fromFrame": 2204,
+          "toFrame": 2213
+        },
+        {
+          "text": "能",
+          "fromFrame": 2213,
+          "toFrame": 2216
+        },
+        {
+          "text": "笑",
+          "fromFrame": 2217,
+          "toFrame": 2221
+        },
+        {
+          "text": "到",
+          "fromFrame": 2221,
+          "toFrame": 2223
+        },
+        {
+          "text": "最后",
+          "fromFrame": 2223,
+          "toFrame": 2235
+        },
+        {
+          "text": "评论区",
+          "fromFrame": 2250,
+          "toFrame": 2266
+        },
+        {
+          "text": "聊聊",
+          "fromFrame": 2266,
+          "toFrame": 2279
+        }
+      ],
+      "pins": [],
+      "audio": "S14.mp3"
+    }
+  ]
+}
