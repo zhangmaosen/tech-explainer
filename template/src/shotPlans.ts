@@ -6,8 +6,8 @@ const BG = "assets/bg/";
 
 export const shotPlans: Record<string, ShotPlan> = {
   S01: { layers: [
-    { sticker: "sticker-image", props: { src: ST + "rocket_sticker.png", width: 480, y: 400, startFrame: 0 } },
-    { sticker: "title-pop", props: { text: "圣杯", color: "#FFD54A", fontSizePx: 260, y: 1000 } },
+    { sticker: "sticker-image", props: { src: ST + "rocket_sticker.png", width: 560, y: 360, startFrame: 0 } },
+    { sticker: "title-pop", props: { text: "圣杯", color: "#FFD54A", fontSizePx: 260, y: 1040 } },
   ]},
   S02: { layers: [
     { sticker: "sticker-image", props: { src: ST + "cn_flag_sticker.png", width: 400, y: 440 } },
@@ -19,12 +19,12 @@ export const shotPlans: Record<string, ShotPlan> = {
   // 机制段 S04-S05: FFSC 流程示意图面板 + marker 跟随
   S04: { layers: [
     { sticker: "sticker-image", props: { src: BG + "ffsc_diagram.png", width: 960, y: 480, startFrame: 0, float: false } },
-    { sticker: "marker-highlight", props: { variant: "circle", keyword: "烧掉", x: 60, y: 520, width: 320, height: 380, color: "#FF5252" } },
+    { sticker: "marker-highlight", props: { variant: "circle", keyword: "烧掉", x: 80, y: 600, width: 280, height: 340, color: "#FF5252" } },
   ]},
   S05: { layers: [
-    { sticker: "sticker-image", props: { src: BG + "ffsc_diagram.png", width: 960, y: 480, startFrame: 0, float: false } },
+    { sticker: "sticker-image", props: { src: BG + "ffsc_diagram.png", width: 960, y: 480, startFrame: 0, float: false, noEnter: true } },
     { sticker: "marker-highlight", props: { variant: "circle", keyword: "涡轮", x: 520, y: 560, width: 260, height: 300, color: "#FFE24A" } },
-    { sticker: "marker-highlight", props: { variant: "circle", keyword: "燃烧室", x: 820, y: 480, width: 240, height: 420, color: "#69F0AE" } },
+    { sticker: "marker-highlight", props: { variant: "circle", keyword: "燃烧室", x: 730, y: 560, width: 250, height: 350, color: "#69F0AE" } },
   ]},
   S06: { layers: [
     { sticker: "title-pop", props: { text: "金属自己都会烧起来", color: "#FF5252", fontSizePx: 110, y: 680 } },

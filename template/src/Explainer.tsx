@@ -44,8 +44,10 @@ function shiftChunks(shot: Shot) {
 }
 
 function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
+  // 钉帧: 只在显式给 keyword 时匹配; 否则返回 undefined 让组件用自己的 startFrame
   const pinFrame = (kw?: string) => {
-    const pin = shot.pins.find((x) => (kw ? x.keyword === kw : true));
+    if (!kw) return undefined;
+    const pin = shot.pins.find((x) => x.keyword === kw);
     return pin ? pin.frame - shot.fromFrame : undefined;
   };
   switch (sticker) {
@@ -68,10 +70,26 @@ function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
     case "compare-bar":
       return <CompareBar left={p.left} right={p.right} suffix={p.suffix} top={p.top} />;
     case "emoji-pop":
-      return <EmojiPop emoji={p.emoji} x={p.x} y={p.y} sizePx={p.sizePx} />;
+      return (
+        <EmojiPop
+          emoji={p.emoji}
+          startFrame={pinFrame(p.keyword) ?? p.startFrame ?? 0}
+          x={p.x}
+          y={p.y}
+          sizePx={p.sizePx}
+        />
+      );
     case "marker-highlight":
       return (
-        <MarkerHighlight x={p.x} y={p.y} width={p.width} color={p.color} variant={p.variant} />
+        <MarkerHighlight
+          startFrame={pinFrame(p.keyword) ?? p.startFrame ?? 0}
+          x={p.x}
+          y={p.y}
+          width={p.width}
+          height={p.height}
+          color={p.color}
+          variant={p.variant}
+        />
       );
     case "sticker-image":
       return (
@@ -83,6 +101,7 @@ function renderSticker(sticker: string, p: Record<string, any>, shot: Shot) {
           width={p.width}
           rotate={p.rotate}
           float={p.float}
+          noEnter={p.noEnter}
         />
       );
     default:

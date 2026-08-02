@@ -2,16 +2,16 @@
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "totalFrames": 2312,
+  "totalFrames": 3195,
   "audioTrack": "audio/full.mp3",
   "shots": [
     {
       "id": "S01",
-      "text": "火箭发动机的终极圣杯，全世界搞了六十年，只有一家公司做成了。",
+      "text": "火箭发动机的圣杯，全世界追了六十年，只有一家公司真正抢到手。",
       "fromFrame": 0,
-      "durationFrames": 174,
+      "durationFrames": 186,
       "stage": "slide",
-      "sticker": "title-pop",
+      "sticker": "sticker-image",
       "words": [
         {
           "text": "火箭",
@@ -20,161 +20,325 @@
         },
         {
           "text": "发动机",
-          "fromFrame": 15,
+          "fromFrame": 14,
           "toFrame": 26
         },
         {
           "text": "的",
           "fromFrame": 26,
-          "toFrame": 31
-        },
-        {
-          "text": "终极",
-          "fromFrame": 32,
-          "toFrame": 42
+          "toFrame": 28
         },
         {
           "text": "圣",
-          "fromFrame": 42,
-          "toFrame": 48
+          "fromFrame": 28,
+          "toFrame": 35
         },
         {
           "text": "杯",
-          "fromFrame": 48,
-          "toFrame": 56
+          "fromFrame": 35,
+          "toFrame": 43
         },
         {
           "text": "全世界",
-          "fromFrame": 64,
-          "toFrame": 81
+          "fromFrame": 49,
+          "toFrame": 67
         },
         {
-          "text": "搞",
-          "fromFrame": 82,
-          "toFrame": 86
+          "text": "追",
+          "fromFrame": 67,
+          "toFrame": 71
         },
         {
           "text": "了",
-          "fromFrame": 86,
-          "toFrame": 88
+          "fromFrame": 71,
+          "toFrame": 73
         },
         {
           "text": "六十",
-          "fromFrame": 88,
-          "toFrame": 96
+          "fromFrame": 74,
+          "toFrame": 82
         },
         {
           "text": "年",
-          "fromFrame": 96,
-          "toFrame": 105
+          "fromFrame": 82,
+          "toFrame": 91
         },
         {
           "text": "只有",
-          "fromFrame": 111,
-          "toFrame": 118
+          "fromFrame": 99,
+          "toFrame": 107
         },
         {
           "text": "一家",
-          "fromFrame": 118,
-          "toFrame": 127
+          "fromFrame": 108,
+          "toFrame": 116
         },
         {
           "text": "公司",
-          "fromFrame": 127,
-          "toFrame": 135
+          "fromFrame": 116,
+          "toFrame": 130
         },
         {
-          "text": "做成",
-          "fromFrame": 136,
-          "toFrame": 144
+          "text": "真正",
+          "fromFrame": 133,
+          "toFrame": 146
         },
         {
-          "text": "了",
-          "fromFrame": 144,
-          "toFrame": 149
+          "text": "抢到",
+          "fromFrame": 146,
+          "toFrame": 155
+        },
+        {
+          "text": "手",
+          "fromFrame": 155,
+          "toFrame": 162
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 3,
+          "toFrame": 73,
+          "text": "火箭发动机的圣杯全世界追了",
+          "words": [
+            {
+              "text": "火箭",
+              "fromFrame": 3,
+              "toFrame": 14
+            },
+            {
+              "text": "发动机",
+              "fromFrame": 14,
+              "toFrame": 26
+            },
+            {
+              "text": "的",
+              "fromFrame": 26,
+              "toFrame": 28
+            },
+            {
+              "text": "圣",
+              "fromFrame": 28,
+              "toFrame": 35
+            },
+            {
+              "text": "杯",
+              "fromFrame": 35,
+              "toFrame": 43
+            },
+            {
+              "text": "全世界",
+              "fromFrame": 49,
+              "toFrame": 67
+            },
+            {
+              "text": "追",
+              "fromFrame": 67,
+              "toFrame": 71
+            },
+            {
+              "text": "了",
+              "fromFrame": 71,
+              "toFrame": 73
+            }
+          ]
+        },
+        {
+          "fromFrame": 74,
+          "toFrame": 130,
+          "text": "六十年只有一家公司",
+          "words": [
+            {
+              "text": "六十",
+              "fromFrame": 74,
+              "toFrame": 82
+            },
+            {
+              "text": "年",
+              "fromFrame": 82,
+              "toFrame": 91
+            },
+            {
+              "text": "只有",
+              "fromFrame": 99,
+              "toFrame": 107
+            },
+            {
+              "text": "一家",
+              "fromFrame": 108,
+              "toFrame": 116
+            },
+            {
+              "text": "公司",
+              "fromFrame": 116,
+              "toFrame": 130
+            }
+          ]
+        },
+        {
+          "fromFrame": 133,
+          "toFrame": 162,
+          "text": "真正抢到手",
+          "words": [
+            {
+              "text": "真正",
+              "fromFrame": 133,
+              "toFrame": 146
+            },
+            {
+              "text": "抢到",
+              "fromFrame": 146,
+              "toFrame": 155
+            },
+            {
+              "text": "手",
+              "fromFrame": 155,
+              "toFrame": 162
+            }
+          ]
         }
       ],
       "pins": [
         {
           "keyword": "圣杯",
-          "sticker": "title-pop",
-          "frame": 42
+          "sticker": "sticker-image",
+          "frame": 28
         }
       ],
       "audio": "S01.mp3"
     },
     {
       "id": "S02",
-      "text": "而现在，中国正带着一整支队伍，向它发起冲锋。",
-      "fromFrame": 182,
-      "durationFrames": 143,
+      "text": "现在，中国正带着一整支队伍，发起冲锋。",
+      "fromFrame": 194,
+      "durationFrames": 132,
       "stage": "slide",
-      "sticker": "title-pop",
+      "sticker": "sticker-image",
       "words": [
         {
-          "text": "而",
-          "fromFrame": 185,
-          "toFrame": 188
-        },
-        {
           "text": "现在",
-          "fromFrame": 189,
-          "toFrame": 204
+          "fromFrame": 197,
+          "toFrame": 213
         },
         {
           "text": "中国",
-          "fromFrame": 214,
-          "toFrame": 226
+          "fromFrame": 224,
+          "toFrame": 236
         },
         {
           "text": "正",
-          "fromFrame": 227,
-          "toFrame": 232
+          "fromFrame": 236,
+          "toFrame": 242
         },
         {
           "text": "带",
-          "fromFrame": 232,
-          "toFrame": 235
+          "fromFrame": 242,
+          "toFrame": 245
         },
         {
           "text": "着",
-          "fromFrame": 235,
-          "toFrame": 238
+          "fromFrame": 245,
+          "toFrame": 247
         },
         {
           "text": "一",
-          "fromFrame": 238,
-          "toFrame": 243
-        },
-        {
-          "text": "整支",
-          "fromFrame": 243,
+          "fromFrame": 248,
           "toFrame": 253
         },
         {
-          "text": "队伍",
+          "text": "整",
           "fromFrame": 253,
-          "toFrame": 264
+          "toFrame": 258
         },
         {
-          "text": "向",
-          "fromFrame": 269,
-          "toFrame": 276
+          "text": "支",
+          "fromFrame": 258,
+          "toFrame": 262
         },
         {
-          "text": "它",
-          "fromFrame": 276,
-          "toFrame": 278
+          "text": "队伍",
+          "fromFrame": 263,
+          "toFrame": 272
         },
         {
           "text": "发起",
-          "fromFrame": 279,
-          "toFrame": 287
+          "fromFrame": 277,
+          "toFrame": 288
         },
         {
           "text": "冲锋",
-          "fromFrame": 288,
-          "toFrame": 300
+          "fromFrame": 289,
+          "toFrame": 301
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 197,
+          "toFrame": 272,
+          "text": "现在中国正带着一整支队伍",
+          "words": [
+            {
+              "text": "现在",
+              "fromFrame": 197,
+              "toFrame": 213
+            },
+            {
+              "text": "中国",
+              "fromFrame": 224,
+              "toFrame": 236
+            },
+            {
+              "text": "正",
+              "fromFrame": 236,
+              "toFrame": 242
+            },
+            {
+              "text": "带",
+              "fromFrame": 242,
+              "toFrame": 245
+            },
+            {
+              "text": "着",
+              "fromFrame": 245,
+              "toFrame": 247
+            },
+            {
+              "text": "一",
+              "fromFrame": 248,
+              "toFrame": 253
+            },
+            {
+              "text": "整",
+              "fromFrame": 253,
+              "toFrame": 258
+            },
+            {
+              "text": "支",
+              "fromFrame": 258,
+              "toFrame": 262
+            },
+            {
+              "text": "队伍",
+              "fromFrame": 263,
+              "toFrame": 272
+            }
+          ]
+        },
+        {
+          "fromFrame": 277,
+          "toFrame": 301,
+          "text": "发起冲锋",
+          "words": [
+            {
+              "text": "发起",
+              "fromFrame": 277,
+              "toFrame": 288
+            },
+            {
+              "text": "冲锋",
+              "fromFrame": 289,
+              "toFrame": 301
+            }
+          ]
         }
       ],
       "pins": [],
@@ -183,45 +347,89 @@
     {
       "id": "S03",
       "text": "这个圣杯，叫全流量分级燃烧。",
-      "fromFrame": 333,
+      "fromFrame": 334,
       "durationFrames": 104,
       "stage": "slide",
       "sticker": "title-pop",
       "words": [
         {
           "text": "这个",
-          "fromFrame": 336,
-          "toFrame": 342
+          "fromFrame": 337,
+          "toFrame": 343
         },
         {
           "text": "圣",
-          "fromFrame": 343,
-          "toFrame": 349
+          "fromFrame": 344,
+          "toFrame": 350
         },
         {
           "text": "杯",
-          "fromFrame": 349,
-          "toFrame": 358
+          "fromFrame": 350,
+          "toFrame": 359
         },
         {
           "text": "叫",
-          "fromFrame": 362,
-          "toFrame": 369
+          "fromFrame": 363,
+          "toFrame": 370
         },
         {
           "text": "全流量",
-          "fromFrame": 370,
-          "toFrame": 386
+          "fromFrame": 371,
+          "toFrame": 387
         },
         {
           "text": "分级",
-          "fromFrame": 386,
-          "toFrame": 398
+          "fromFrame": 387,
+          "toFrame": 399
         },
         {
           "text": "燃烧",
-          "fromFrame": 399,
-          "toFrame": 413
+          "fromFrame": 400,
+          "toFrame": 414
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 337,
+          "toFrame": 414,
+          "text": "这个圣杯叫全流量分级燃烧",
+          "words": [
+            {
+              "text": "这个",
+              "fromFrame": 337,
+              "toFrame": 343
+            },
+            {
+              "text": "圣",
+              "fromFrame": 344,
+              "toFrame": 350
+            },
+            {
+              "text": "杯",
+              "fromFrame": 350,
+              "toFrame": 359
+            },
+            {
+              "text": "叫",
+              "fromFrame": 363,
+              "toFrame": 370
+            },
+            {
+              "text": "全流量",
+              "fromFrame": 371,
+              "toFrame": 387
+            },
+            {
+              "text": "分级",
+              "fromFrame": 387,
+              "toFrame": 399
+            },
+            {
+              "text": "燃烧",
+              "fromFrame": 400,
+              "toFrame": 414
+            }
+          ]
         }
       ],
       "pins": [],
@@ -229,698 +437,1887 @@
     },
     {
       "id": "S04",
-      "text": "简单说，就是把火箭燃料百分之百榨干，一滴都不浪费。",
-      "fromFrame": 445,
-      "durationFrames": 152,
+      "text": "普通火箭发动机，要白白烧掉一部分燃料来推涡轮，就像边开车边漏油。",
+      "fromFrame": 446,
+      "durationFrames": 195,
       "stage": "slide",
-      "sticker": "marker-highlight",
+      "sticker": "flow-diagram",
       "words": [
         {
-          "text": "简单",
-          "fromFrame": 448,
+          "text": "普通",
+          "fromFrame": 449,
           "toFrame": 459
         },
         {
-          "text": "说",
-          "fromFrame": 459,
-          "toFrame": 468
-        },
-        {
-          "text": "就",
-          "fromFrame": 475,
-          "toFrame": 480
-        },
-        {
-          "text": "是",
-          "fromFrame": 480,
-          "toFrame": 482
-        },
-        {
-          "text": "把",
-          "fromFrame": 482,
-          "toFrame": 485
-        },
-        {
           "text": "火箭",
-          "fromFrame": 486,
-          "toFrame": 497
+          "fromFrame": 460,
+          "toFrame": 467
+        },
+        {
+          "text": "发动机",
+          "fromFrame": 468,
+          "toFrame": 483
+        },
+        {
+          "text": "要",
+          "fromFrame": 491,
+          "toFrame": 496
+        },
+        {
+          "text": "白白",
+          "fromFrame": 496,
+          "toFrame": 503
+        },
+        {
+          "text": "烧掉",
+          "fromFrame": 504,
+          "toFrame": 513
+        },
+        {
+          "text": "一部分",
+          "fromFrame": 514,
+          "toFrame": 523
         },
         {
           "text": "燃料",
-          "fromFrame": 498,
-          "toFrame": 507
-        },
-        {
-          "text": "百分之百",
-          "fromFrame": 508,
-          "toFrame": 524
-        },
-        {
-          "text": "榨干",
-          "fromFrame": 524,
+          "fromFrame": 523,
           "toFrame": 536
         },
         {
-          "text": "一",
-          "fromFrame": 546,
-          "toFrame": 552
+          "text": "来",
+          "fromFrame": 540,
+          "toFrame": 544
         },
         {
-          "text": "滴",
-          "fromFrame": 552,
-          "toFrame": 556
+          "text": "推",
+          "fromFrame": 544,
+          "toFrame": 549
         },
         {
-          "text": "都",
-          "fromFrame": 556,
-          "toFrame": 559
-        },
-        {
-          "text": "不",
-          "fromFrame": 559,
+          "text": "涡轮",
+          "fromFrame": 549,
           "toFrame": 561
         },
         {
-          "text": "浪费",
-          "fromFrame": 561,
-          "toFrame": 572
+          "text": "就",
+          "fromFrame": 573,
+          "toFrame": 577
+        },
+        {
+          "text": "像",
+          "fromFrame": 577,
+          "toFrame": 582
+        },
+        {
+          "text": "边",
+          "fromFrame": 583,
+          "toFrame": 587
+        },
+        {
+          "text": "开车",
+          "fromFrame": 587,
+          "toFrame": 599
+        },
+        {
+          "text": "边",
+          "fromFrame": 600,
+          "toFrame": 605
+        },
+        {
+          "text": "漏",
+          "fromFrame": 605,
+          "toFrame": 609
+        },
+        {
+          "text": "油",
+          "fromFrame": 609,
+          "toFrame": 617
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 449,
+          "toFrame": 513,
+          "text": "普通火箭发动机要白白烧掉",
+          "words": [
+            {
+              "text": "普通",
+              "fromFrame": 449,
+              "toFrame": 459
+            },
+            {
+              "text": "火箭",
+              "fromFrame": 460,
+              "toFrame": 467
+            },
+            {
+              "text": "发动机",
+              "fromFrame": 468,
+              "toFrame": 483
+            },
+            {
+              "text": "要",
+              "fromFrame": 491,
+              "toFrame": 496
+            },
+            {
+              "text": "白白",
+              "fromFrame": 496,
+              "toFrame": 503
+            },
+            {
+              "text": "烧掉",
+              "fromFrame": 504,
+              "toFrame": 513
+            }
+          ]
+        },
+        {
+          "fromFrame": 514,
+          "toFrame": 587,
+          "text": "一部分燃料来推涡轮就像边",
+          "words": [
+            {
+              "text": "一部分",
+              "fromFrame": 514,
+              "toFrame": 523
+            },
+            {
+              "text": "燃料",
+              "fromFrame": 523,
+              "toFrame": 536
+            },
+            {
+              "text": "来",
+              "fromFrame": 540,
+              "toFrame": 544
+            },
+            {
+              "text": "推",
+              "fromFrame": 544,
+              "toFrame": 549
+            },
+            {
+              "text": "涡轮",
+              "fromFrame": 549,
+              "toFrame": 561
+            },
+            {
+              "text": "就",
+              "fromFrame": 573,
+              "toFrame": 577
+            },
+            {
+              "text": "像",
+              "fromFrame": 577,
+              "toFrame": 582
+            },
+            {
+              "text": "边",
+              "fromFrame": 583,
+              "toFrame": 587
+            }
+          ]
+        },
+        {
+          "fromFrame": 587,
+          "toFrame": 617,
+          "text": "开车边漏油",
+          "words": [
+            {
+              "text": "开车",
+              "fromFrame": 587,
+              "toFrame": 599
+            },
+            {
+              "text": "边",
+              "fromFrame": 600,
+              "toFrame": 605
+            },
+            {
+              "text": "漏",
+              "fromFrame": 605,
+              "toFrame": 609
+            },
+            {
+              "text": "油",
+              "fromFrame": 609,
+              "toFrame": 617
+            }
+          ]
         }
       ],
       "pins": [
         {
-          "keyword": "百分之百",
+          "keyword": "烧掉",
           "sticker": "marker-highlight",
-          "frame": 508
+          "frame": 504
         }
       ],
       "audio": "S04.mp3"
     },
     {
       "id": "S05",
-      "text": "运载能力，直接提升百分之二十。",
-      "fromFrame": 605,
-      "durationFrames": 100,
+      "text": "而全流量，是让每滴燃料先气化去推涡轮，再全部喷进燃烧室烧干净，一滴都不浪费。",
+      "fromFrame": 649,
+      "durationFrames": 233,
       "stage": "slide",
-      "sticker": "number-roll",
+      "sticker": "flow-diagram",
       "words": [
         {
-          "text": "运载",
-          "fromFrame": 608,
-          "toFrame": 618
+          "text": "而",
+          "fromFrame": 652,
+          "toFrame": 656
         },
         {
-          "text": "能力",
-          "fromFrame": 618,
-          "toFrame": 631
+          "text": "全流量",
+          "fromFrame": 656,
+          "toFrame": 675
         },
         {
-          "text": "直接",
-          "fromFrame": 639,
-          "toFrame": 648
+          "text": "是",
+          "fromFrame": 681,
+          "toFrame": 687
         },
         {
-          "text": "提升",
-          "fromFrame": 648,
-          "toFrame": 658
+          "text": "让",
+          "fromFrame": 687,
+          "toFrame": 691
         },
         {
-          "text": "百分之二十",
-          "fromFrame": 658,
-          "toFrame": 680
+          "text": "每",
+          "fromFrame": 691,
+          "toFrame": 698
+        },
+        {
+          "text": "滴",
+          "fromFrame": 698,
+          "toFrame": 702
+        },
+        {
+          "text": "燃料",
+          "fromFrame": 702,
+          "toFrame": 715
+        },
+        {
+          "text": "先气化",
+          "fromFrame": 719,
+          "toFrame": 737
+        },
+        {
+          "text": "去",
+          "fromFrame": 737,
+          "toFrame": 740
+        },
+        {
+          "text": "推",
+          "fromFrame": 740,
+          "toFrame": 744
+        },
+        {
+          "text": "涡轮",
+          "fromFrame": 745,
+          "toFrame": 759
+        },
+        {
+          "text": "再",
+          "fromFrame": 765,
+          "toFrame": 770
+        },
+        {
+          "text": "全部",
+          "fromFrame": 770,
+          "toFrame": 781
+        },
+        {
+          "text": "喷",
+          "fromFrame": 782,
+          "toFrame": 788
+        },
+        {
+          "text": "进",
+          "fromFrame": 788,
+          "toFrame": 793
+        },
+        {
+          "text": "燃烧室",
+          "fromFrame": 793,
+          "toFrame": 808
+        },
+        {
+          "text": "烧",
+          "fromFrame": 808,
+          "toFrame": 813
+        },
+        {
+          "text": "干净",
+          "fromFrame": 813,
+          "toFrame": 824
+        },
+        {
+          "text": "一",
+          "fromFrame": 830,
+          "toFrame": 836
+        },
+        {
+          "text": "滴",
+          "fromFrame": 836,
+          "toFrame": 840
+        },
+        {
+          "text": "都",
+          "fromFrame": 840,
+          "toFrame": 844
+        },
+        {
+          "text": "不",
+          "fromFrame": 844,
+          "toFrame": 846
+        },
+        {
+          "text": "浪费",
+          "fromFrame": 846,
+          "toFrame": 857
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 652,
+          "toFrame": 737,
+          "text": "而全流量是让每滴燃料先气化",
+          "words": [
+            {
+              "text": "而",
+              "fromFrame": 652,
+              "toFrame": 656
+            },
+            {
+              "text": "全流量",
+              "fromFrame": 656,
+              "toFrame": 675
+            },
+            {
+              "text": "是",
+              "fromFrame": 681,
+              "toFrame": 687
+            },
+            {
+              "text": "让",
+              "fromFrame": 687,
+              "toFrame": 691
+            },
+            {
+              "text": "每",
+              "fromFrame": 691,
+              "toFrame": 698
+            },
+            {
+              "text": "滴",
+              "fromFrame": 698,
+              "toFrame": 702
+            },
+            {
+              "text": "燃料",
+              "fromFrame": 702,
+              "toFrame": 715
+            },
+            {
+              "text": "先气化",
+              "fromFrame": 719,
+              "toFrame": 737
+            }
+          ]
+        },
+        {
+          "fromFrame": 737,
+          "toFrame": 813,
+          "text": "去推涡轮再全部喷进燃烧室烧",
+          "words": [
+            {
+              "text": "去",
+              "fromFrame": 737,
+              "toFrame": 740
+            },
+            {
+              "text": "推",
+              "fromFrame": 740,
+              "toFrame": 744
+            },
+            {
+              "text": "涡轮",
+              "fromFrame": 745,
+              "toFrame": 759
+            },
+            {
+              "text": "再",
+              "fromFrame": 765,
+              "toFrame": 770
+            },
+            {
+              "text": "全部",
+              "fromFrame": 770,
+              "toFrame": 781
+            },
+            {
+              "text": "喷",
+              "fromFrame": 782,
+              "toFrame": 788
+            },
+            {
+              "text": "进",
+              "fromFrame": 788,
+              "toFrame": 793
+            },
+            {
+              "text": "燃烧室",
+              "fromFrame": 793,
+              "toFrame": 808
+            },
+            {
+              "text": "烧",
+              "fromFrame": 808,
+              "toFrame": 813
+            }
+          ]
+        },
+        {
+          "fromFrame": 813,
+          "toFrame": 857,
+          "text": "干净一滴都不浪费",
+          "words": [
+            {
+              "text": "干净",
+              "fromFrame": 813,
+              "toFrame": 824
+            },
+            {
+              "text": "一",
+              "fromFrame": 830,
+              "toFrame": 836
+            },
+            {
+              "text": "滴",
+              "fromFrame": 836,
+              "toFrame": 840
+            },
+            {
+              "text": "都",
+              "fromFrame": 840,
+              "toFrame": 844
+            },
+            {
+              "text": "不",
+              "fromFrame": 844,
+              "toFrame": 846
+            },
+            {
+              "text": "浪费",
+              "fromFrame": 846,
+              "toFrame": 857
+            }
+          ]
         }
       ],
       "pins": [
         {
-          "keyword": "二十",
-          "sticker": "number-roll",
-          "frame": 658
+          "keyword": "涡轮",
+          "sticker": "marker-highlight",
+          "frame": 745
+        },
+        {
+          "keyword": "燃烧室",
+          "sticker": "marker-highlight",
+          "frame": 793
         }
       ],
       "audio": "S05.mp3"
     },
     {
       "id": "S06",
-      "text": "美国的SpaceX，用猛禽发动机第一个撞开了这扇门。",
-      "fromFrame": 713,
-      "durationFrames": 139,
+      "text": "但它内部的高温富氧环境，恐怖到金属自己都会烧起来。",
+      "fromFrame": 890,
+      "durationFrames": 150,
       "stage": "slide",
-      "sticker": "title-pop",
+      "sticker": "emoji-pop",
       "words": [
         {
-          "text": "美国",
-          "fromFrame": 716,
-          "toFrame": 726
+          "text": "但",
+          "fromFrame": 893,
+          "toFrame": 898
+        },
+        {
+          "text": "它",
+          "fromFrame": 898,
+          "toFrame": 901
+        },
+        {
+          "text": "内部",
+          "fromFrame": 901,
+          "toFrame": 909
         },
         {
           "text": "的",
-          "fromFrame": 726,
-          "toFrame": 729
+          "fromFrame": 909,
+          "toFrame": 911
         },
         {
-          "text": "SpaceX",
-          "fromFrame": 730,
-          "toFrame": 753
+          "text": "高温",
+          "fromFrame": 911,
+          "toFrame": 920
         },
         {
-          "text": "用",
-          "fromFrame": 758,
-          "toFrame": 762
+          "text": "富氧",
+          "fromFrame": 920,
+          "toFrame": 927
         },
         {
-          "text": "猛禽",
-          "fromFrame": 762,
-          "toFrame": 772
+          "text": "环境",
+          "fromFrame": 927,
+          "toFrame": 941
         },
         {
-          "text": "发动机",
-          "fromFrame": 772,
-          "toFrame": 788
+          "text": "恐怖",
+          "fromFrame": 953,
+          "toFrame": 962
         },
         {
-          "text": "第一个",
-          "fromFrame": 791,
-          "toFrame": 801
+          "text": "到",
+          "fromFrame": 962,
+          "toFrame": 966
         },
         {
-          "text": "撞开",
-          "fromFrame": 802,
-          "toFrame": 811
+          "text": "金属",
+          "fromFrame": 966,
+          "toFrame": 976
         },
         {
-          "text": "了",
-          "fromFrame": 811,
-          "toFrame": 813
+          "text": "自己",
+          "fromFrame": 977,
+          "toFrame": 990
         },
         {
-          "text": "这",
-          "fromFrame": 813,
-          "toFrame": 816
+          "text": "都",
+          "fromFrame": 994,
+          "toFrame": 997
         },
         {
-          "text": "扇",
-          "fromFrame": 816,
-          "toFrame": 820
+          "text": "会",
+          "fromFrame": 997,
+          "toFrame": 1001
         },
         {
-          "text": "门",
-          "fromFrame": 820,
-          "toFrame": 828
+          "text": "烧",
+          "fromFrame": 1001,
+          "toFrame": 1007
+        },
+        {
+          "text": "起来",
+          "fromFrame": 1007,
+          "toFrame": 1017
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 893,
+          "toFrame": 962,
+          "text": "但它内部的高温富氧环境恐怖",
+          "words": [
+            {
+              "text": "但",
+              "fromFrame": 893,
+              "toFrame": 898
+            },
+            {
+              "text": "它",
+              "fromFrame": 898,
+              "toFrame": 901
+            },
+            {
+              "text": "内部",
+              "fromFrame": 901,
+              "toFrame": 909
+            },
+            {
+              "text": "的",
+              "fromFrame": 909,
+              "toFrame": 911
+            },
+            {
+              "text": "高温",
+              "fromFrame": 911,
+              "toFrame": 920
+            },
+            {
+              "text": "富氧",
+              "fromFrame": 920,
+              "toFrame": 927
+            },
+            {
+              "text": "环境",
+              "fromFrame": 927,
+              "toFrame": 941
+            },
+            {
+              "text": "恐怖",
+              "fromFrame": 953,
+              "toFrame": 962
+            }
+          ]
+        },
+        {
+          "fromFrame": 962,
+          "toFrame": 1017,
+          "text": "到金属自己都会烧起来",
+          "words": [
+            {
+              "text": "到",
+              "fromFrame": 962,
+              "toFrame": 966
+            },
+            {
+              "text": "金属",
+              "fromFrame": 966,
+              "toFrame": 976
+            },
+            {
+              "text": "自己",
+              "fromFrame": 977,
+              "toFrame": 990
+            },
+            {
+              "text": "都",
+              "fromFrame": 994,
+              "toFrame": 997
+            },
+            {
+              "text": "会",
+              "fromFrame": 997,
+              "toFrame": 1001
+            },
+            {
+              "text": "烧",
+              "fromFrame": 1001,
+              "toFrame": 1007
+            },
+            {
+              "text": "起来",
+              "fromFrame": 1007,
+              "toFrame": 1017
+            }
+          ]
         }
       ],
       "pins": [
         {
-          "keyword": "SpaceX",
+          "keyword": "金属",
           "sticker": "emoji-pop",
-          "frame": 730
+          "frame": 966
         }
       ],
       "audio": "S06.mp3"
     },
     {
       "id": "S07",
-      "text": "最新的猛禽三号，海平面推力二百八十吨，室压三百五十bar，都是世界纪录。",
-      "fromFrame": 860,
-      "durationFrames": 202,
+      "text": "所以六十年里，苏联和美国都试过，全都倒在了这一步。",
+      "fromFrame": 1048,
+      "durationFrames": 159,
       "stage": "slide",
-      "sticker": "number-roll",
+      "sticker": "title-pop",
       "words": [
         {
-          "text": "最新",
-          "fromFrame": 863,
-          "toFrame": 875
+          "text": "所以",
+          "fromFrame": 1051,
+          "toFrame": 1060
         },
         {
-          "text": "的",
-          "fromFrame": 875,
-          "toFrame": 879
+          "text": "六十",
+          "fromFrame": 1060,
+          "toFrame": 1069
         },
         {
-          "text": "猛禽",
-          "fromFrame": 880,
-          "toFrame": 889
+          "text": "年",
+          "fromFrame": 1069,
+          "toFrame": 1073
         },
         {
-          "text": "三号",
-          "fromFrame": 889,
-          "toFrame": 902
-        },
-        {
-          "text": "海平面",
-          "fromFrame": 911,
-          "toFrame": 927
-        },
-        {
-          "text": "推力",
-          "fromFrame": 927,
-          "toFrame": 937
-        },
-        {
-          "text": "二百八十",
-          "fromFrame": 938,
-          "toFrame": 952
-        },
-        {
-          "text": "吨",
-          "fromFrame": 952,
-          "toFrame": 959
-        },
-        {
-          "text": "室压",
-          "fromFrame": 967,
-          "toFrame": 978
-        },
-        {
-          "text": "三百五十",
-          "fromFrame": 979,
-          "toFrame": 994
-        },
-        {
-          "text": "bar",
-          "fromFrame": 994,
-          "toFrame": 1003
-        },
-        {
-          "text": "都",
-          "fromFrame": 1008,
-          "toFrame": 1013
-        },
-        {
-          "text": "是",
-          "fromFrame": 1013,
-          "toFrame": 1019
-        },
-        {
-          "text": "世界纪录",
-          "fromFrame": 1019,
-          "toFrame": 1038
-        }
-      ],
-      "pins": [
-        {
-          "keyword": "二百八十",
-          "sticker": "number-roll",
-          "frame": 938
-        }
-      ],
-      "audio": "S07.mp3"
-    },
-    {
-      "id": "S08",
-      "text": "马斯克的目标更狠，单台成本压到一百万美元以下。",
-      "fromFrame": 1070,
-      "durationFrames": 136,
-      "stage": "slide",
-      "sticker": "number-roll",
-      "words": [
-        {
-          "text": "马斯",
+          "text": "里",
           "fromFrame": 1073,
           "toFrame": 1082
         },
         {
-          "text": "克",
-          "fromFrame": 1082,
-          "toFrame": 1084
+          "text": "苏联",
+          "fromFrame": 1089,
+          "toFrame": 1103
         },
         {
-          "text": "的",
-          "fromFrame": 1084,
-          "toFrame": 1086
+          "text": "和",
+          "fromFrame": 1103,
+          "toFrame": 1106
         },
         {
-          "text": "目标",
-          "fromFrame": 1086,
-          "toFrame": 1094
+          "text": "美国",
+          "fromFrame": 1106,
+          "toFrame": 1121
         },
         {
-          "text": "更",
-          "fromFrame": 1095,
-          "toFrame": 1100
+          "text": "都",
+          "fromFrame": 1124,
+          "toFrame": 1130
         },
         {
-          "text": "狠",
-          "fromFrame": 1100,
-          "toFrame": 1108
+          "text": "试",
+          "fromFrame": 1130,
+          "toFrame": 1136
         },
         {
-          "text": "单台",
-          "fromFrame": 1119,
-          "toFrame": 1128
+          "text": "过",
+          "fromFrame": 1136,
+          "toFrame": 1142
         },
         {
-          "text": "成本",
-          "fromFrame": 1128,
-          "toFrame": 1141
-        },
-        {
-          "text": "压到",
-          "fromFrame": 1141,
-          "toFrame": 1151
-        },
-        {
-          "text": "一百万",
-          "fromFrame": 1151,
+          "text": "全都",
+          "fromFrame": 1148,
           "toFrame": 1162
         },
         {
-          "text": "美元",
-          "fromFrame": 1163,
-          "toFrame": 1170
+          "text": "倒在",
+          "fromFrame": 1162,
+          "toFrame": 1169
         },
         {
-          "text": "以下",
-          "fromFrame": 1170,
-          "toFrame": 1181
+          "text": "了",
+          "fromFrame": 1169,
+          "toFrame": 1171
+        },
+        {
+          "text": "这",
+          "fromFrame": 1171,
+          "toFrame": 1174
+        },
+        {
+          "text": "一",
+          "fromFrame": 1174,
+          "toFrame": 1178
+        },
+        {
+          "text": "步",
+          "fromFrame": 1178,
+          "toFrame": 1183
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 1051,
+          "toFrame": 1136,
+          "text": "所以六十年里苏联和美国都试",
+          "words": [
+            {
+              "text": "所以",
+              "fromFrame": 1051,
+              "toFrame": 1060
+            },
+            {
+              "text": "六十",
+              "fromFrame": 1060,
+              "toFrame": 1069
+            },
+            {
+              "text": "年",
+              "fromFrame": 1069,
+              "toFrame": 1073
+            },
+            {
+              "text": "里",
+              "fromFrame": 1073,
+              "toFrame": 1082
+            },
+            {
+              "text": "苏联",
+              "fromFrame": 1089,
+              "toFrame": 1103
+            },
+            {
+              "text": "和",
+              "fromFrame": 1103,
+              "toFrame": 1106
+            },
+            {
+              "text": "美国",
+              "fromFrame": 1106,
+              "toFrame": 1121
+            },
+            {
+              "text": "都",
+              "fromFrame": 1124,
+              "toFrame": 1130
+            },
+            {
+              "text": "试",
+              "fromFrame": 1130,
+              "toFrame": 1136
+            }
+          ]
+        },
+        {
+          "fromFrame": 1136,
+          "toFrame": 1183,
+          "text": "过全都倒在了这一步",
+          "words": [
+            {
+              "text": "过",
+              "fromFrame": 1136,
+              "toFrame": 1142
+            },
+            {
+              "text": "全都",
+              "fromFrame": 1148,
+              "toFrame": 1162
+            },
+            {
+              "text": "倒在",
+              "fromFrame": 1162,
+              "toFrame": 1169
+            },
+            {
+              "text": "了",
+              "fromFrame": 1169,
+              "toFrame": 1171
+            },
+            {
+              "text": "这",
+              "fromFrame": 1171,
+              "toFrame": 1174
+            },
+            {
+              "text": "一",
+              "fromFrame": 1174,
+              "toFrame": 1178
+            },
+            {
+              "text": "步",
+              "fromFrame": 1178,
+              "toFrame": 1183
+            }
+          ]
+        }
+      ],
+      "pins": [],
+      "audio": "S07.mp3"
+    },
+    {
+      "id": "S08",
+      "text": "SpaceX的解法，是自研SX500超级合金，能扛住八百三十bar，相当于八千米深海的压力。",
+      "fromFrame": 1215,
+      "durationFrames": 235,
+      "stage": "slide",
+      "sticker": "number-roll",
+      "words": [
+        {
+          "text": "SpaceX",
+          "fromFrame": 1218,
+          "toFrame": 1237
+        },
+        {
+          "text": "的",
+          "fromFrame": 1237,
+          "toFrame": 1239
+        },
+        {
+          "text": "解法",
+          "fromFrame": 1240,
+          "toFrame": 1252
+        },
+        {
+          "text": "是",
+          "fromFrame": 1256,
+          "toFrame": 1263
+        },
+        {
+          "text": "自研",
+          "fromFrame": 1263,
+          "toFrame": 1276
+        },
+        {
+          "text": "SX",
+          "fromFrame": 1279,
+          "toFrame": 1296
+        },
+        {
+          "text": "500",
+          "fromFrame": 1296,
+          "toFrame": 1304
+        },
+        {
+          "text": "超级",
+          "fromFrame": 1304,
+          "toFrame": 1313
+        },
+        {
+          "text": "合金",
+          "fromFrame": 1313,
+          "toFrame": 1326
+        },
+        {
+          "text": "能",
+          "fromFrame": 1331,
+          "toFrame": 1337
+        },
+        {
+          "text": "扛住",
+          "fromFrame": 1337,
+          "toFrame": 1347
+        },
+        {
+          "text": "八百三十",
+          "fromFrame": 1347,
+          "toFrame": 1363
+        },
+        {
+          "text": "bar",
+          "fromFrame": 1363,
+          "toFrame": 1371
+        },
+        {
+          "text": "相当于",
+          "fromFrame": 1377,
+          "toFrame": 1390
+        },
+        {
+          "text": "八千",
+          "fromFrame": 1391,
+          "toFrame": 1401
+        },
+        {
+          "text": "米",
+          "fromFrame": 1401,
+          "toFrame": 1404
+        },
+        {
+          "text": "深海",
+          "fromFrame": 1404,
+          "toFrame": 1413
+        },
+        {
+          "text": "的",
+          "fromFrame": 1413,
+          "toFrame": 1415
+        },
+        {
+          "text": "压力",
+          "fromFrame": 1416,
+          "toFrame": 1425
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 1218,
+          "toFrame": 1276,
+          "text": "SpaceX的解法是自研",
+          "words": [
+            {
+              "text": "SpaceX",
+              "fromFrame": 1218,
+              "toFrame": 1237
+            },
+            {
+              "text": "的",
+              "fromFrame": 1237,
+              "toFrame": 1239
+            },
+            {
+              "text": "解法",
+              "fromFrame": 1240,
+              "toFrame": 1252
+            },
+            {
+              "text": "是",
+              "fromFrame": 1256,
+              "toFrame": 1263
+            },
+            {
+              "text": "自研",
+              "fromFrame": 1263,
+              "toFrame": 1276
+            }
+          ]
+        },
+        {
+          "fromFrame": 1279,
+          "toFrame": 1347,
+          "text": "SX500超级合金能扛住",
+          "words": [
+            {
+              "text": "SX",
+              "fromFrame": 1279,
+              "toFrame": 1296
+            },
+            {
+              "text": "500",
+              "fromFrame": 1296,
+              "toFrame": 1304
+            },
+            {
+              "text": "超级",
+              "fromFrame": 1304,
+              "toFrame": 1313
+            },
+            {
+              "text": "合金",
+              "fromFrame": 1313,
+              "toFrame": 1326
+            },
+            {
+              "text": "能",
+              "fromFrame": 1331,
+              "toFrame": 1337
+            },
+            {
+              "text": "扛住",
+              "fromFrame": 1337,
+              "toFrame": 1347
+            }
+          ]
+        },
+        {
+          "fromFrame": 1347,
+          "toFrame": 1404,
+          "text": "八百三十bar相当于八千米",
+          "words": [
+            {
+              "text": "八百三十",
+              "fromFrame": 1347,
+              "toFrame": 1363
+            },
+            {
+              "text": "bar",
+              "fromFrame": 1363,
+              "toFrame": 1371
+            },
+            {
+              "text": "相当于",
+              "fromFrame": 1377,
+              "toFrame": 1390
+            },
+            {
+              "text": "八千",
+              "fromFrame": 1391,
+              "toFrame": 1401
+            },
+            {
+              "text": "米",
+              "fromFrame": 1401,
+              "toFrame": 1404
+            }
+          ]
+        },
+        {
+          "fromFrame": 1404,
+          "toFrame": 1425,
+          "text": "深海的压力",
+          "words": [
+            {
+              "text": "深海",
+              "fromFrame": 1404,
+              "toFrame": 1413
+            },
+            {
+              "text": "的",
+              "fromFrame": 1413,
+              "toFrame": 1415
+            },
+            {
+              "text": "压力",
+              "fromFrame": 1416,
+              "toFrame": 1425
+            }
+          ]
         }
       ],
       "pins": [
         {
-          "keyword": "一百万",
+          "keyword": "八百三十",
           "sticker": "number-roll",
-          "frame": 1151
+          "frame": 1347
         }
       ],
       "audio": "S08.mp3"
     },
     {
       "id": "S09",
-      "text": "面对代差，中国怎么打？答案是国家队加民营，双轨齐上。",
-      "fromFrame": 1214,
-      "durationFrames": 193,
+      "text": "猛禽三号推力二百八十吨，相当于把四辆主战坦克同时举上天。",
+      "fromFrame": 1458,
+      "durationFrames": 188,
       "stage": "slide",
-      "sticker": "list-flyin",
+      "sticker": "number-roll",
       "words": [
         {
-          "text": "面对",
-          "fromFrame": 1217,
-          "toFrame": 1226
+          "text": "猛禽",
+          "fromFrame": 1461,
+          "toFrame": 1472
         },
         {
-          "text": "代差",
-          "fromFrame": 1226,
-          "toFrame": 1240
+          "text": "三号",
+          "fromFrame": 1472,
+          "toFrame": 1486
         },
         {
-          "text": "中国",
-          "fromFrame": 1250,
-          "toFrame": 1260
+          "text": "推力",
+          "fromFrame": 1489,
+          "toFrame": 1499
         },
         {
-          "text": "怎么",
-          "fromFrame": 1260,
-          "toFrame": 1265
-        },
-        {
-          "text": "打",
-          "fromFrame": 1265,
-          "toFrame": 1272
-        },
-        {
-          "text": "答案",
-          "fromFrame": 1288,
-          "toFrame": 1298
-        },
-        {
-          "text": "是",
-          "fromFrame": 1298,
-          "toFrame": 1308
-        },
-        {
-          "text": "国家队",
-          "fromFrame": 1312,
-          "toFrame": 1330
-        },
-        {
-          "text": "加",
-          "fromFrame": 1331,
-          "toFrame": 1337
-        },
-        {
-          "text": "民营",
-          "fromFrame": 1337,
-          "toFrame": 1350
-        },
-        {
-          "text": "双轨",
-          "fromFrame": 1355,
-          "toFrame": 1370
-        },
-        {
-          "text": "齐",
-          "fromFrame": 1370,
-          "toFrame": 1376
-        },
-        {
-          "text": "上",
-          "fromFrame": 1376,
-          "toFrame": 1383
-        }
-      ],
-      "pins": [],
-      "audio": "S09.mp3"
-    },
-    {
-      "id": "S10",
-      "text": "国家队的王牌，是二百吨级的YF二一五，专为长征九号重型火箭打造。",
-      "fromFrame": 1415,
-      "durationFrames": 202,
-      "stage": "slide",
-      "sticker": "title-pop",
-      "words": [
-        {
-          "text": "国家队",
-          "fromFrame": 1418,
-          "toFrame": 1429
-        },
-        {
-          "text": "的",
-          "fromFrame": 1429,
-          "toFrame": 1431
-        },
-        {
-          "text": "王牌",
-          "fromFrame": 1432,
-          "toFrame": 1447
-        },
-        {
-          "text": "是",
-          "fromFrame": 1449,
-          "toFrame": 1457
-        },
-        {
-          "text": "二百",
-          "fromFrame": 1457,
-          "toFrame": 1466
+          "text": "二百八十",
+          "fromFrame": 1500,
+          "toFrame": 1515
         },
         {
           "text": "吨",
-          "fromFrame": 1466,
-          "toFrame": 1470
+          "fromFrame": 1515,
+          "toFrame": 1523
         },
         {
-          "text": "级",
-          "fromFrame": 1470,
-          "toFrame": 1474
+          "text": "相当于",
+          "fromFrame": 1532,
+          "toFrame": 1547
         },
         {
-          "text": "的",
-          "fromFrame": 1474,
-          "toFrame": 1481
+          "text": "把",
+          "fromFrame": 1548,
+          "toFrame": 1553
         },
         {
-          "text": "YF",
-          "fromFrame": 1484,
-          "toFrame": 1502
+          "text": "四",
+          "fromFrame": 1553,
+          "toFrame": 1558
         },
         {
-          "text": "二一五",
-          "fromFrame": 1503,
-          "toFrame": 1517
+          "text": "辆",
+          "fromFrame": 1558,
+          "toFrame": 1563
         },
         {
-          "text": "专",
-          "fromFrame": 1527,
-          "toFrame": 1533
-        },
-        {
-          "text": "为",
-          "fromFrame": 1533,
-          "toFrame": 1538
-        },
-        {
-          "text": "长征",
-          "fromFrame": 1538,
-          "toFrame": 1550
-        },
-        {
-          "text": "九号",
-          "fromFrame": 1550,
-          "toFrame": 1562
-        },
-        {
-          "text": "重型",
+          "text": "主战",
           "fromFrame": 1563,
           "toFrame": 1572
         },
         {
-          "text": "火箭",
+          "text": "坦克",
           "fromFrame": 1572,
-          "toFrame": 1581
+          "toFrame": 1587
         },
         {
-          "text": "打造",
-          "fromFrame": 1582,
-          "toFrame": 1592
+          "text": "同时",
+          "fromFrame": 1590,
+          "toFrame": 1603
+        },
+        {
+          "text": "举",
+          "fromFrame": 1604,
+          "toFrame": 1607
+        },
+        {
+          "text": "上天",
+          "fromFrame": 1607,
+          "toFrame": 1621
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 1461,
+          "toFrame": 1523,
+          "text": "猛禽三号推力二百八十吨",
+          "words": [
+            {
+              "text": "猛禽",
+              "fromFrame": 1461,
+              "toFrame": 1472
+            },
+            {
+              "text": "三号",
+              "fromFrame": 1472,
+              "toFrame": 1486
+            },
+            {
+              "text": "推力",
+              "fromFrame": 1489,
+              "toFrame": 1499
+            },
+            {
+              "text": "二百八十",
+              "fromFrame": 1500,
+              "toFrame": 1515
+            },
+            {
+              "text": "吨",
+              "fromFrame": 1515,
+              "toFrame": 1523
+            }
+          ]
+        },
+        {
+          "fromFrame": 1532,
+          "toFrame": 1587,
+          "text": "相当于把四辆主战坦克",
+          "words": [
+            {
+              "text": "相当于",
+              "fromFrame": 1532,
+              "toFrame": 1547
+            },
+            {
+              "text": "把",
+              "fromFrame": 1548,
+              "toFrame": 1553
+            },
+            {
+              "text": "四",
+              "fromFrame": 1553,
+              "toFrame": 1558
+            },
+            {
+              "text": "辆",
+              "fromFrame": 1558,
+              "toFrame": 1563
+            },
+            {
+              "text": "主战",
+              "fromFrame": 1563,
+              "toFrame": 1572
+            },
+            {
+              "text": "坦克",
+              "fromFrame": 1572,
+              "toFrame": 1587
+            }
+          ]
+        },
+        {
+          "fromFrame": 1590,
+          "toFrame": 1621,
+          "text": "同时举上天",
+          "words": [
+            {
+              "text": "同时",
+              "fromFrame": 1590,
+              "toFrame": 1603
+            },
+            {
+              "text": "举",
+              "fromFrame": 1604,
+              "toFrame": 1607
+            },
+            {
+              "text": "上天",
+              "fromFrame": 1607,
+              "toFrame": 1621
+            }
+          ]
         }
       ],
       "pins": [
         {
-          "keyword": "二一五",
-          "sticker": "title-pop",
-          "frame": 1503
+          "keyword": "二百八十",
+          "sticker": "number-roll",
+          "frame": 1500
+        }
+      ],
+      "audio": "S09.mp3"
+    },
+    {
+      "id": "S10",
+      "text": "更夸张的是推重比，一台轿车重量的发动机，能顶起将近两头蓝鲸。",
+      "fromFrame": 1654,
+      "durationFrames": 192,
+      "stage": "slide",
+      "sticker": "number-roll",
+      "words": [
+        {
+          "text": "更",
+          "fromFrame": 1657,
+          "toFrame": 1663
+        },
+        {
+          "text": "夸张",
+          "fromFrame": 1663,
+          "toFrame": 1672
+        },
+        {
+          "text": "的",
+          "fromFrame": 1672,
+          "toFrame": 1675
+        },
+        {
+          "text": "是",
+          "fromFrame": 1675,
+          "toFrame": 1683
+        },
+        {
+          "text": "推重",
+          "fromFrame": 1686,
+          "toFrame": 1700
+        },
+        {
+          "text": "比",
+          "fromFrame": 1700,
+          "toFrame": 1706
+        },
+        {
+          "text": "一",
+          "fromFrame": 1717,
+          "toFrame": 1722
+        },
+        {
+          "text": "台",
+          "fromFrame": 1722,
+          "toFrame": 1726
+        },
+        {
+          "text": "轿车",
+          "fromFrame": 1727,
+          "toFrame": 1737
+        },
+        {
+          "text": "重量",
+          "fromFrame": 1738,
+          "toFrame": 1746
+        },
+        {
+          "text": "的",
+          "fromFrame": 1746,
+          "toFrame": 1748
+        },
+        {
+          "text": "发动机",
+          "fromFrame": 1748,
+          "toFrame": 1764
+        },
+        {
+          "text": "能",
+          "fromFrame": 1770,
+          "toFrame": 1776
+        },
+        {
+          "text": "顶起",
+          "fromFrame": 1776,
+          "toFrame": 1788
+        },
+        {
+          "text": "将近",
+          "fromFrame": 1788,
+          "toFrame": 1798
+        },
+        {
+          "text": "两头",
+          "fromFrame": 1799,
+          "toFrame": 1810
+        },
+        {
+          "text": "蓝鲸",
+          "fromFrame": 1810,
+          "toFrame": 1822
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 1657,
+          "toFrame": 1737,
+          "text": "更夸张的是推重比一台轿车",
+          "words": [
+            {
+              "text": "更",
+              "fromFrame": 1657,
+              "toFrame": 1663
+            },
+            {
+              "text": "夸张",
+              "fromFrame": 1663,
+              "toFrame": 1672
+            },
+            {
+              "text": "的",
+              "fromFrame": 1672,
+              "toFrame": 1675
+            },
+            {
+              "text": "是",
+              "fromFrame": 1675,
+              "toFrame": 1683
+            },
+            {
+              "text": "推重",
+              "fromFrame": 1686,
+              "toFrame": 1700
+            },
+            {
+              "text": "比",
+              "fromFrame": 1700,
+              "toFrame": 1706
+            },
+            {
+              "text": "一",
+              "fromFrame": 1717,
+              "toFrame": 1722
+            },
+            {
+              "text": "台",
+              "fromFrame": 1722,
+              "toFrame": 1726
+            },
+            {
+              "text": "轿车",
+              "fromFrame": 1727,
+              "toFrame": 1737
+            }
+          ]
+        },
+        {
+          "fromFrame": 1738,
+          "toFrame": 1798,
+          "text": "重量的发动机能顶起将近",
+          "words": [
+            {
+              "text": "重量",
+              "fromFrame": 1738,
+              "toFrame": 1746
+            },
+            {
+              "text": "的",
+              "fromFrame": 1746,
+              "toFrame": 1748
+            },
+            {
+              "text": "发动机",
+              "fromFrame": 1748,
+              "toFrame": 1764
+            },
+            {
+              "text": "能",
+              "fromFrame": 1770,
+              "toFrame": 1776
+            },
+            {
+              "text": "顶起",
+              "fromFrame": 1776,
+              "toFrame": 1788
+            },
+            {
+              "text": "将近",
+              "fromFrame": 1788,
+              "toFrame": 1798
+            }
+          ]
+        },
+        {
+          "fromFrame": 1799,
+          "toFrame": 1822,
+          "text": "两头蓝鲸",
+          "words": [
+            {
+              "text": "两头",
+              "fromFrame": 1799,
+              "toFrame": 1810
+            },
+            {
+              "text": "蓝鲸",
+              "fromFrame": 1810,
+              "toFrame": 1822
+            }
+          ]
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "两头",
+          "sticker": "number-roll",
+          "frame": 1799
         }
       ],
       "audio": "S10.mp3"
     },
     {
       "id": "S11",
-      "text": "民营这边更是全线爆发，蓝箭、星梭、火圣同时冲刺。",
-      "fromFrame": 1625,
-      "durationFrames": 179,
+      "text": "成本更狠，靠3D打印把制造周期从两个月压到两三天，目标单台一百万美元。",
+      "fromFrame": 1854,
+      "durationFrames": 226,
       "stage": "slide",
-      "sticker": "list-flyin",
+      "sticker": "number-roll",
       "words": [
         {
-          "text": "民营",
-          "fromFrame": 1628,
-          "toFrame": 1637
-        },
-        {
-          "text": "这边",
-          "fromFrame": 1637,
-          "toFrame": 1650
+          "text": "成本",
+          "fromFrame": 1857,
+          "toFrame": 1867
         },
         {
           "text": "更",
-          "fromFrame": 1653,
-          "toFrame": 1658
+          "fromFrame": 1867,
+          "toFrame": 1873
         },
         {
-          "text": "是",
-          "fromFrame": 1658,
-          "toFrame": 1662
+          "text": "狠",
+          "fromFrame": 1873,
+          "toFrame": 1881
         },
         {
-          "text": "全线",
-          "fromFrame": 1662,
-          "toFrame": 1673
+          "text": "靠",
+          "fromFrame": 1890,
+          "toFrame": 1898
         },
         {
-          "text": "爆发",
-          "fromFrame": 1673,
-          "toFrame": 1686
+          "text": "3",
+          "fromFrame": 1899,
+          "toFrame": 1906
         },
         {
-          "text": "蓝箭",
-          "fromFrame": 1695,
-          "toFrame": 1709
+          "text": "D",
+          "fromFrame": 1906,
+          "toFrame": 1909
         },
         {
-          "text": "星梭",
-          "fromFrame": 1719,
-          "toFrame": 1735
+          "text": "打印",
+          "fromFrame": 1909,
+          "toFrame": 1921
         },
         {
-          "text": "火圣",
-          "fromFrame": 1744,
-          "toFrame": 1757
+          "text": "把",
+          "fromFrame": 1924,
+          "toFrame": 1929
         },
         {
-          "text": "同时",
-          "fromFrame": 1757,
-          "toFrame": 1768
+          "text": "制造",
+          "fromFrame": 1929,
+          "toFrame": 1937
         },
         {
-          "text": "冲刺",
-          "fromFrame": 1768,
-          "toFrame": 1780
+          "text": "周期",
+          "fromFrame": 1937,
+          "toFrame": 1949
+        },
+        {
+          "text": "从",
+          "fromFrame": 1950,
+          "toFrame": 1956
+        },
+        {
+          "text": "两",
+          "fromFrame": 1956,
+          "toFrame": 1961
+        },
+        {
+          "text": "个",
+          "fromFrame": 1961,
+          "toFrame": 1964
+        },
+        {
+          "text": "月",
+          "fromFrame": 1964,
+          "toFrame": 1970
+        },
+        {
+          "text": "压",
+          "fromFrame": 1970,
+          "toFrame": 1975
+        },
+        {
+          "text": "到",
+          "fromFrame": 1975,
+          "toFrame": 1979
+        },
+        {
+          "text": "两三",
+          "fromFrame": 1979,
+          "toFrame": 1990
+        },
+        {
+          "text": "天",
+          "fromFrame": 1990,
+          "toFrame": 1999
+        },
+        {
+          "text": "目标",
+          "fromFrame": 2008,
+          "toFrame": 2017
+        },
+        {
+          "text": "单",
+          "fromFrame": 2017,
+          "toFrame": 2021
+        },
+        {
+          "text": "台",
+          "fromFrame": 2021,
+          "toFrame": 2031
+        },
+        {
+          "text": "一百万",
+          "fromFrame": 2032,
+          "toFrame": 2044
+        },
+        {
+          "text": "美元",
+          "fromFrame": 2044,
+          "toFrame": 2055
         }
       ],
-      "pins": [],
+      "chunks": [
+        {
+          "fromFrame": 1857,
+          "toFrame": 1937,
+          "text": "成本更狠靠3D打印把制造",
+          "words": [
+            {
+              "text": "成本",
+              "fromFrame": 1857,
+              "toFrame": 1867
+            },
+            {
+              "text": "更",
+              "fromFrame": 1867,
+              "toFrame": 1873
+            },
+            {
+              "text": "狠",
+              "fromFrame": 1873,
+              "toFrame": 1881
+            },
+            {
+              "text": "靠",
+              "fromFrame": 1890,
+              "toFrame": 1898
+            },
+            {
+              "text": "3",
+              "fromFrame": 1899,
+              "toFrame": 1906
+            },
+            {
+              "text": "D",
+              "fromFrame": 1906,
+              "toFrame": 1909
+            },
+            {
+              "text": "打印",
+              "fromFrame": 1909,
+              "toFrame": 1921
+            },
+            {
+              "text": "把",
+              "fromFrame": 1924,
+              "toFrame": 1929
+            },
+            {
+              "text": "制造",
+              "fromFrame": 1929,
+              "toFrame": 1937
+            }
+          ]
+        },
+        {
+          "fromFrame": 1937,
+          "toFrame": 2017,
+          "text": "周期从两个月压到两三天目标",
+          "words": [
+            {
+              "text": "周期",
+              "fromFrame": 1937,
+              "toFrame": 1949
+            },
+            {
+              "text": "从",
+              "fromFrame": 1950,
+              "toFrame": 1956
+            },
+            {
+              "text": "两",
+              "fromFrame": 1956,
+              "toFrame": 1961
+            },
+            {
+              "text": "个",
+              "fromFrame": 1961,
+              "toFrame": 1964
+            },
+            {
+              "text": "月",
+              "fromFrame": 1964,
+              "toFrame": 1970
+            },
+            {
+              "text": "压",
+              "fromFrame": 1970,
+              "toFrame": 1975
+            },
+            {
+              "text": "到",
+              "fromFrame": 1975,
+              "toFrame": 1979
+            },
+            {
+              "text": "两三",
+              "fromFrame": 1979,
+              "toFrame": 1990
+            },
+            {
+              "text": "天",
+              "fromFrame": 1990,
+              "toFrame": 1999
+            },
+            {
+              "text": "目标",
+              "fromFrame": 2008,
+              "toFrame": 2017
+            }
+          ]
+        },
+        {
+          "fromFrame": 2017,
+          "toFrame": 2055,
+          "text": "单台一百万美元",
+          "words": [
+            {
+              "text": "单",
+              "fromFrame": 2017,
+              "toFrame": 2021
+            },
+            {
+              "text": "台",
+              "fromFrame": 2021,
+              "toFrame": 2031
+            },
+            {
+              "text": "一百万",
+              "fromFrame": 2032,
+              "toFrame": 2044
+            },
+            {
+              "text": "美元",
+              "fromFrame": 2044,
+              "toFrame": 2055
+            }
+          ]
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "一百万",
+          "sticker": "number-roll",
+          "frame": 2032
+        }
+      ],
       "audio": "S11.mp3"
     },
     {
       "id": "S12",
-      "text": "从材料到3D打印，中国正在飞快抹平这道代差。",
-      "fromFrame": 1812,
-      "durationFrames": 145,
+      "text": "中国的打法，是国家队加民营双轨冲刺。",
+      "fromFrame": 2088,
+      "durationFrames": 129,
       "stage": "slide",
-      "sticker": "compare-bar",
+      "sticker": "list-flyin",
       "words": [
         {
-          "text": "从",
-          "fromFrame": 1815,
-          "toFrame": 1821
-        },
-        {
-          "text": "材料",
-          "fromFrame": 1821,
-          "toFrame": 1833
-        },
-        {
-          "text": "到",
-          "fromFrame": 1834,
-          "toFrame": 1837
-        },
-        {
-          "text": "3",
-          "fromFrame": 1838,
-          "toFrame": 1844
-        },
-        {
-          "text": "D",
-          "fromFrame": 1844,
-          "toFrame": 1847
-        },
-        {
-          "text": "打印",
-          "fromFrame": 1848,
-          "toFrame": 1859
-        },
-        {
           "text": "中国",
-          "fromFrame": 1869,
-          "toFrame": 1882
+          "fromFrame": 2091,
+          "toFrame": 2101
         },
         {
-          "text": "正在",
-          "fromFrame": 1883,
-          "toFrame": 1891
+          "text": "的",
+          "fromFrame": 2101,
+          "toFrame": 2103
         },
         {
-          "text": "飞快",
-          "fromFrame": 1891,
-          "toFrame": 1901
+          "text": "打法",
+          "fromFrame": 2104,
+          "toFrame": 2118
         },
         {
-          "text": "抹平",
-          "fromFrame": 1901,
-          "toFrame": 1913
+          "text": "是",
+          "fromFrame": 2123,
+          "toFrame": 2129
         },
         {
-          "text": "这",
-          "fromFrame": 1913,
-          "toFrame": 1918
+          "text": "国家队",
+          "fromFrame": 2129,
+          "toFrame": 2149
         },
         {
-          "text": "道",
-          "fromFrame": 1918,
-          "toFrame": 1920
+          "text": "加",
+          "fromFrame": 2150,
+          "toFrame": 2157
         },
         {
-          "text": "代差",
-          "fromFrame": 1921,
-          "toFrame": 1933
+          "text": "民营",
+          "fromFrame": 2157,
+          "toFrame": 2167
+        },
+        {
+          "text": "双轨",
+          "fromFrame": 2168,
+          "toFrame": 2179
+        },
+        {
+          "text": "冲刺",
+          "fromFrame": 2180,
+          "toFrame": 2192
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 2091,
+          "toFrame": 2167,
+          "text": "中国的打法是国家队加民营",
+          "words": [
+            {
+              "text": "中国",
+              "fromFrame": 2091,
+              "toFrame": 2101
+            },
+            {
+              "text": "的",
+              "fromFrame": 2101,
+              "toFrame": 2103
+            },
+            {
+              "text": "打法",
+              "fromFrame": 2104,
+              "toFrame": 2118
+            },
+            {
+              "text": "是",
+              "fromFrame": 2123,
+              "toFrame": 2129
+            },
+            {
+              "text": "国家队",
+              "fromFrame": 2129,
+              "toFrame": 2149
+            },
+            {
+              "text": "加",
+              "fromFrame": 2150,
+              "toFrame": 2157
+            },
+            {
+              "text": "民营",
+              "fromFrame": 2157,
+              "toFrame": 2167
+            }
+          ]
+        },
+        {
+          "fromFrame": 2168,
+          "toFrame": 2192,
+          "text": "双轨冲刺",
+          "words": [
+            {
+              "text": "双轨",
+              "fromFrame": 2168,
+              "toFrame": 2179
+            },
+            {
+              "text": "冲刺",
+              "fromFrame": 2180,
+              "toFrame": 2192
+            }
+          ]
         }
       ],
       "pins": [],
@@ -928,162 +2325,910 @@
     },
     {
       "id": "S13",
-      "text": "二零二六到二零二七，多款发动机进入试车，胜负就在眼前。",
-      "fromFrame": 1965,
-      "durationFrames": 158,
+      "text": "国家队的王牌是YF二一五，二百吨级，专为长征九号重型火箭打造。",
+      "fromFrame": 2225,
+      "durationFrames": 202,
+      "stage": "slide",
+      "sticker": "title-pop",
+      "words": [
+        {
+          "text": "国家队",
+          "fromFrame": 2228,
+          "toFrame": 2239
+        },
+        {
+          "text": "的",
+          "fromFrame": 2239,
+          "toFrame": 2241
+        },
+        {
+          "text": "王牌",
+          "fromFrame": 2242,
+          "toFrame": 2250
+        },
+        {
+          "text": "是",
+          "fromFrame": 2251,
+          "toFrame": 2261
+        },
+        {
+          "text": "YF",
+          "fromFrame": 2264,
+          "toFrame": 2282
+        },
+        {
+          "text": "二一",
+          "fromFrame": 2282,
+          "toFrame": 2291
+        },
+        {
+          "text": "五",
+          "fromFrame": 2291,
+          "toFrame": 2298
+        },
+        {
+          "text": "二百",
+          "fromFrame": 2306,
+          "toFrame": 2315
+        },
+        {
+          "text": "吨",
+          "fromFrame": 2315,
+          "toFrame": 2320
+        },
+        {
+          "text": "级",
+          "fromFrame": 2320,
+          "toFrame": 2327
+        },
+        {
+          "text": "专",
+          "fromFrame": 2337,
+          "toFrame": 2343
+        },
+        {
+          "text": "为",
+          "fromFrame": 2343,
+          "toFrame": 2348
+        },
+        {
+          "text": "长征",
+          "fromFrame": 2349,
+          "toFrame": 2361
+        },
+        {
+          "text": "九号",
+          "fromFrame": 2361,
+          "toFrame": 2372
+        },
+        {
+          "text": "重型",
+          "fromFrame": 2373,
+          "toFrame": 2382
+        },
+        {
+          "text": "火箭",
+          "fromFrame": 2382,
+          "toFrame": 2392
+        },
+        {
+          "text": "打造",
+          "fromFrame": 2392,
+          "toFrame": 2403
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 2228,
+          "toFrame": 2298,
+          "text": "国家队的王牌是YF二一五",
+          "words": [
+            {
+              "text": "国家队",
+              "fromFrame": 2228,
+              "toFrame": 2239
+            },
+            {
+              "text": "的",
+              "fromFrame": 2239,
+              "toFrame": 2241
+            },
+            {
+              "text": "王牌",
+              "fromFrame": 2242,
+              "toFrame": 2250
+            },
+            {
+              "text": "是",
+              "fromFrame": 2251,
+              "toFrame": 2261
+            },
+            {
+              "text": "YF",
+              "fromFrame": 2264,
+              "toFrame": 2282
+            },
+            {
+              "text": "二一",
+              "fromFrame": 2282,
+              "toFrame": 2291
+            },
+            {
+              "text": "五",
+              "fromFrame": 2291,
+              "toFrame": 2298
+            }
+          ]
+        },
+        {
+          "fromFrame": 2306,
+          "toFrame": 2382,
+          "text": "二百吨级专为长征九号重型",
+          "words": [
+            {
+              "text": "二百",
+              "fromFrame": 2306,
+              "toFrame": 2315
+            },
+            {
+              "text": "吨",
+              "fromFrame": 2315,
+              "toFrame": 2320
+            },
+            {
+              "text": "级",
+              "fromFrame": 2320,
+              "toFrame": 2327
+            },
+            {
+              "text": "专",
+              "fromFrame": 2337,
+              "toFrame": 2343
+            },
+            {
+              "text": "为",
+              "fromFrame": 2343,
+              "toFrame": 2348
+            },
+            {
+              "text": "长征",
+              "fromFrame": 2349,
+              "toFrame": 2361
+            },
+            {
+              "text": "九号",
+              "fromFrame": 2361,
+              "toFrame": 2372
+            },
+            {
+              "text": "重型",
+              "fromFrame": 2373,
+              "toFrame": 2382
+            }
+          ]
+        },
+        {
+          "fromFrame": 2382,
+          "toFrame": 2403,
+          "text": "火箭打造",
+          "words": [
+            {
+              "text": "火箭",
+              "fromFrame": 2382,
+              "toFrame": 2392
+            },
+            {
+              "text": "打造",
+              "fromFrame": 2392,
+              "toFrame": 2403
+            }
+          ]
+        }
+      ],
+      "pins": [
+        {
+          "keyword": "二一五",
+          "sticker": "title-pop",
+          "frame": 2282
+        }
+      ],
+      "audio": "S13.mp3"
+    },
+    {
+      "id": "S14",
+      "text": "民营这边，蓝箭、星梭、火圣同时开火，全流量发动机全线爆发。",
+      "fromFrame": 2435,
+      "durationFrames": 203,
+      "stage": "slide",
+      "sticker": "list-flyin",
+      "words": [
+        {
+          "text": "民营",
+          "fromFrame": 2438,
+          "toFrame": 2447
+        },
+        {
+          "text": "这边",
+          "fromFrame": 2447,
+          "toFrame": 2459
+        },
+        {
+          "text": "蓝箭",
+          "fromFrame": 2465,
+          "toFrame": 2479
+        },
+        {
+          "text": "星梭",
+          "fromFrame": 2485,
+          "toFrame": 2502
+        },
+        {
+          "text": "火圣",
+          "fromFrame": 2513,
+          "toFrame": 2525
+        },
+        {
+          "text": "同时",
+          "fromFrame": 2526,
+          "toFrame": 2534
+        },
+        {
+          "text": "开火",
+          "fromFrame": 2535,
+          "toFrame": 2548
+        },
+        {
+          "text": "全流量",
+          "fromFrame": 2557,
+          "toFrame": 2571
+        },
+        {
+          "text": "发动机",
+          "fromFrame": 2572,
+          "toFrame": 2588
+        },
+        {
+          "text": "全线",
+          "fromFrame": 2588,
+          "toFrame": 2601
+        },
+        {
+          "text": "爆发",
+          "fromFrame": 2601,
+          "toFrame": 2613
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 2438,
+          "toFrame": 2534,
+          "text": "民营这边蓝箭星梭火圣同时",
+          "words": [
+            {
+              "text": "民营",
+              "fromFrame": 2438,
+              "toFrame": 2447
+            },
+            {
+              "text": "这边",
+              "fromFrame": 2447,
+              "toFrame": 2459
+            },
+            {
+              "text": "蓝箭",
+              "fromFrame": 2465,
+              "toFrame": 2479
+            },
+            {
+              "text": "星梭",
+              "fromFrame": 2485,
+              "toFrame": 2502
+            },
+            {
+              "text": "火圣",
+              "fromFrame": 2513,
+              "toFrame": 2525
+            },
+            {
+              "text": "同时",
+              "fromFrame": 2526,
+              "toFrame": 2534
+            }
+          ]
+        },
+        {
+          "fromFrame": 2535,
+          "toFrame": 2613,
+          "text": "开火全流量发动机全线爆发",
+          "words": [
+            {
+              "text": "开火",
+              "fromFrame": 2535,
+              "toFrame": 2548
+            },
+            {
+              "text": "全流量",
+              "fromFrame": 2557,
+              "toFrame": 2571
+            },
+            {
+              "text": "发动机",
+              "fromFrame": 2572,
+              "toFrame": 2588
+            },
+            {
+              "text": "全线",
+              "fromFrame": 2588,
+              "toFrame": 2601
+            },
+            {
+              "text": "爆发",
+              "fromFrame": 2601,
+              "toFrame": 2613
+            }
+          ]
+        }
+      ],
+      "pins": [],
+      "audio": "S14.mp3"
+    },
+    {
+      "id": "S15",
+      "text": "连最关键的耐高温铜合金，国产供应链也已经量产，装上了真发动机。",
+      "fromFrame": 2646,
+      "durationFrames": 196,
+      "stage": "slide",
+      "sticker": "sticker-image",
+      "words": [
+        {
+          "text": "连",
+          "fromFrame": 2649,
+          "toFrame": 2656
+        },
+        {
+          "text": "最",
+          "fromFrame": 2657,
+          "toFrame": 2663
+        },
+        {
+          "text": "关键",
+          "fromFrame": 2663,
+          "toFrame": 2672
+        },
+        {
+          "text": "的",
+          "fromFrame": 2672,
+          "toFrame": 2674
+        },
+        {
+          "text": "耐",
+          "fromFrame": 2675,
+          "toFrame": 2679
+        },
+        {
+          "text": "高温",
+          "fromFrame": 2679,
+          "toFrame": 2688
+        },
+        {
+          "text": "铜",
+          "fromFrame": 2688,
+          "toFrame": 2693
+        },
+        {
+          "text": "合金",
+          "fromFrame": 2693,
+          "toFrame": 2707
+        },
+        {
+          "text": "国产",
+          "fromFrame": 2716,
+          "toFrame": 2729
+        },
+        {
+          "text": "供应链",
+          "fromFrame": 2729,
+          "toFrame": 2745
+        },
+        {
+          "text": "也",
+          "fromFrame": 2747,
+          "toFrame": 2751
+        },
+        {
+          "text": "已经",
+          "fromFrame": 2752,
+          "toFrame": 2758
+        },
+        {
+          "text": "量产",
+          "fromFrame": 2758,
+          "toFrame": 2772
+        },
+        {
+          "text": "装",
+          "fromFrame": 2780,
+          "toFrame": 2786
+        },
+        {
+          "text": "上",
+          "fromFrame": 2786,
+          "toFrame": 2790
+        },
+        {
+          "text": "了",
+          "fromFrame": 2790,
+          "toFrame": 2792
+        },
+        {
+          "text": "真发",
+          "fromFrame": 2793,
+          "toFrame": 2805
+        },
+        {
+          "text": "动机",
+          "fromFrame": 2805,
+          "toFrame": 2817
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 2649,
+          "toFrame": 2729,
+          "text": "连最关键的耐高温铜合金国产",
+          "words": [
+            {
+              "text": "连",
+              "fromFrame": 2649,
+              "toFrame": 2656
+            },
+            {
+              "text": "最",
+              "fromFrame": 2657,
+              "toFrame": 2663
+            },
+            {
+              "text": "关键",
+              "fromFrame": 2663,
+              "toFrame": 2672
+            },
+            {
+              "text": "的",
+              "fromFrame": 2672,
+              "toFrame": 2674
+            },
+            {
+              "text": "耐",
+              "fromFrame": 2675,
+              "toFrame": 2679
+            },
+            {
+              "text": "高温",
+              "fromFrame": 2679,
+              "toFrame": 2688
+            },
+            {
+              "text": "铜",
+              "fromFrame": 2688,
+              "toFrame": 2693
+            },
+            {
+              "text": "合金",
+              "fromFrame": 2693,
+              "toFrame": 2707
+            },
+            {
+              "text": "国产",
+              "fromFrame": 2716,
+              "toFrame": 2729
+            }
+          ]
+        },
+        {
+          "fromFrame": 2729,
+          "toFrame": 2792,
+          "text": "供应链也已经量产装上了",
+          "words": [
+            {
+              "text": "供应链",
+              "fromFrame": 2729,
+              "toFrame": 2745
+            },
+            {
+              "text": "也",
+              "fromFrame": 2747,
+              "toFrame": 2751
+            },
+            {
+              "text": "已经",
+              "fromFrame": 2752,
+              "toFrame": 2758
+            },
+            {
+              "text": "量产",
+              "fromFrame": 2758,
+              "toFrame": 2772
+            },
+            {
+              "text": "装",
+              "fromFrame": 2780,
+              "toFrame": 2786
+            },
+            {
+              "text": "上",
+              "fromFrame": 2786,
+              "toFrame": 2790
+            },
+            {
+              "text": "了",
+              "fromFrame": 2790,
+              "toFrame": 2792
+            }
+          ]
+        },
+        {
+          "fromFrame": 2793,
+          "toFrame": 2817,
+          "text": "真发动机",
+          "words": [
+            {
+              "text": "真发",
+              "fromFrame": 2793,
+              "toFrame": 2805
+            },
+            {
+              "text": "动机",
+              "fromFrame": 2805,
+              "toFrame": 2817
+            }
+          ]
+        }
+      ],
+      "pins": [],
+      "audio": "S15.mp3"
+    },
+    {
+      "id": "S16",
+      "text": "二零二六到二零二七，多款发动机整机试车，这场圣杯之争就要见分晓。",
+      "fromFrame": 2850,
+      "durationFrames": 186,
       "stage": "slide",
       "sticker": "title-pop",
       "words": [
         {
           "text": "二零二六",
-          "fromFrame": 1968,
-          "toFrame": 1984
+          "fromFrame": 2853,
+          "toFrame": 2870
         },
         {
           "text": "到",
-          "fromFrame": 1984,
-          "toFrame": 1988
+          "fromFrame": 2870,
+          "toFrame": 2874
         },
         {
           "text": "二零二七",
-          "fromFrame": 1988,
-          "toFrame": 2008
+          "fromFrame": 2874,
+          "toFrame": 2894
         },
         {
           "text": "多",
-          "fromFrame": 2017,
-          "toFrame": 2021
+          "fromFrame": 2903,
+          "toFrame": 2907
         },
         {
           "text": "款",
-          "fromFrame": 2021,
-          "toFrame": 2025
+          "fromFrame": 2907,
+          "toFrame": 2912
         },
         {
           "text": "发动机",
-          "fromFrame": 2026,
-          "toFrame": 2039
+          "fromFrame": 2913,
+          "toFrame": 2925
         },
         {
-          "text": "进入",
-          "fromFrame": 2039,
-          "toFrame": 2046
+          "text": "整机",
+          "fromFrame": 2926,
+          "toFrame": 2935
         },
         {
           "text": "试车",
-          "fromFrame": 2046,
-          "toFrame": 2060
+          "fromFrame": 2936,
+          "toFrame": 2948
         },
         {
-          "text": "胜负",
-          "fromFrame": 2064,
-          "toFrame": 2078
+          "text": "这",
+          "fromFrame": 2955,
+          "toFrame": 2959
+        },
+        {
+          "text": "场",
+          "fromFrame": 2959,
+          "toFrame": 2963
+        },
+        {
+          "text": "圣",
+          "fromFrame": 2964,
+          "toFrame": 2970
+        },
+        {
+          "text": "杯",
+          "fromFrame": 2970,
+          "toFrame": 2973
+        },
+        {
+          "text": "之",
+          "fromFrame": 2973,
+          "toFrame": 2977
+        },
+        {
+          "text": "争",
+          "fromFrame": 2977,
+          "toFrame": 2985
         },
         {
           "text": "就",
-          "fromFrame": 2079,
-          "toFrame": 2082
+          "fromFrame": 2988,
+          "toFrame": 2993
         },
         {
-          "text": "在",
-          "fromFrame": 2082,
-          "toFrame": 2085
+          "text": "要",
+          "fromFrame": 2993,
+          "toFrame": 2995
         },
         {
-          "text": "眼前",
-          "fromFrame": 2085,
-          "toFrame": 2098
+          "text": "见分晓",
+          "fromFrame": 2996,
+          "toFrame": 3012
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 2853,
+          "toFrame": 2912,
+          "text": "二零二六到二零二七多款",
+          "words": [
+            {
+              "text": "二零二六",
+              "fromFrame": 2853,
+              "toFrame": 2870
+            },
+            {
+              "text": "到",
+              "fromFrame": 2870,
+              "toFrame": 2874
+            },
+            {
+              "text": "二零二七",
+              "fromFrame": 2874,
+              "toFrame": 2894
+            },
+            {
+              "text": "多",
+              "fromFrame": 2903,
+              "toFrame": 2907
+            },
+            {
+              "text": "款",
+              "fromFrame": 2907,
+              "toFrame": 2912
+            }
+          ]
+        },
+        {
+          "fromFrame": 2913,
+          "toFrame": 2985,
+          "text": "发动机整机试车这场圣杯之争",
+          "words": [
+            {
+              "text": "发动机",
+              "fromFrame": 2913,
+              "toFrame": 2925
+            },
+            {
+              "text": "整机",
+              "fromFrame": 2926,
+              "toFrame": 2935
+            },
+            {
+              "text": "试车",
+              "fromFrame": 2936,
+              "toFrame": 2948
+            },
+            {
+              "text": "这",
+              "fromFrame": 2955,
+              "toFrame": 2959
+            },
+            {
+              "text": "场",
+              "fromFrame": 2959,
+              "toFrame": 2963
+            },
+            {
+              "text": "圣",
+              "fromFrame": 2964,
+              "toFrame": 2970
+            },
+            {
+              "text": "杯",
+              "fromFrame": 2970,
+              "toFrame": 2973
+            },
+            {
+              "text": "之",
+              "fromFrame": 2973,
+              "toFrame": 2977
+            },
+            {
+              "text": "争",
+              "fromFrame": 2977,
+              "toFrame": 2985
+            }
+          ]
+        },
+        {
+          "fromFrame": 2988,
+          "toFrame": 3012,
+          "text": "就要见分晓",
+          "words": [
+            {
+              "text": "就",
+              "fromFrame": 2988,
+              "toFrame": 2993
+            },
+            {
+              "text": "要",
+              "fromFrame": 2993,
+              "toFrame": 2995
+            },
+            {
+              "text": "见分晓",
+              "fromFrame": 2996,
+              "toFrame": 3012
+            }
+          ]
         }
       ],
       "pins": [],
-      "audio": "S13.mp3"
+      "audio": "S16.mp3"
     },
     {
-      "id": "S14",
-      "text": "你觉得这场圣杯之争，谁能笑到最后？评论区聊聊。",
-      "fromFrame": 2131,
-      "durationFrames": 173,
+      "id": "S17",
+      "text": "你觉得这一次，谁能笑到最后？评论区聊聊。",
+      "fromFrame": 3044,
+      "durationFrames": 143,
       "stage": "slide",
       "sticker": "title-pop",
       "words": [
         {
           "text": "你",
-          "fromFrame": 2134,
-          "toFrame": 2139
+          "fromFrame": 3047,
+          "toFrame": 3054
         },
         {
           "text": "觉得",
-          "fromFrame": 2139,
-          "toFrame": 2154
+          "fromFrame": 3054,
+          "toFrame": 3059
         },
         {
           "text": "这",
-          "fromFrame": 2157,
-          "toFrame": 2165
+          "fromFrame": 3059,
+          "toFrame": 3062
         },
         {
-          "text": "场",
-          "fromFrame": 2165,
-          "toFrame": 2169
-        },
-        {
-          "text": "圣",
-          "fromFrame": 2170,
-          "toFrame": 2177
-        },
-        {
-          "text": "杯",
-          "fromFrame": 2177,
-          "toFrame": 2181
-        },
-        {
-          "text": "之",
-          "fromFrame": 2181,
-          "toFrame": 2185
-        },
-        {
-          "text": "争",
-          "fromFrame": 2185,
-          "toFrame": 2194
+          "text": "一次",
+          "fromFrame": 3062,
+          "toFrame": 3077
         },
         {
           "text": "谁",
-          "fromFrame": 2204,
-          "toFrame": 2213
+          "fromFrame": 3088,
+          "toFrame": 3097
         },
         {
           "text": "能",
-          "fromFrame": 2213,
-          "toFrame": 2216
+          "fromFrame": 3097,
+          "toFrame": 3099
         },
         {
           "text": "笑",
-          "fromFrame": 2217,
-          "toFrame": 2221
+          "fromFrame": 3100,
+          "toFrame": 3103
         },
         {
           "text": "到",
-          "fromFrame": 2221,
-          "toFrame": 2223
+          "fromFrame": 3103,
+          "toFrame": 3106
         },
         {
           "text": "最后",
-          "fromFrame": 2223,
-          "toFrame": 2235
+          "fromFrame": 3106,
+          "toFrame": 3118
         },
         {
           "text": "评论区",
-          "fromFrame": 2250,
-          "toFrame": 2266
+          "fromFrame": 3134,
+          "toFrame": 3149
         },
         {
           "text": "聊聊",
-          "fromFrame": 2266,
-          "toFrame": 2279
+          "fromFrame": 3149,
+          "toFrame": 3162
+        }
+      ],
+      "chunks": [
+        {
+          "fromFrame": 3047,
+          "toFrame": 3118,
+          "text": "你觉得这一次谁能笑到最后",
+          "words": [
+            {
+              "text": "你",
+              "fromFrame": 3047,
+              "toFrame": 3054
+            },
+            {
+              "text": "觉得",
+              "fromFrame": 3054,
+              "toFrame": 3059
+            },
+            {
+              "text": "这",
+              "fromFrame": 3059,
+              "toFrame": 3062
+            },
+            {
+              "text": "一次",
+              "fromFrame": 3062,
+              "toFrame": 3077
+            },
+            {
+              "text": "谁",
+              "fromFrame": 3088,
+              "toFrame": 3097
+            },
+            {
+              "text": "能",
+              "fromFrame": 3097,
+              "toFrame": 3099
+            },
+            {
+              "text": "笑",
+              "fromFrame": 3100,
+              "toFrame": 3103
+            },
+            {
+              "text": "到",
+              "fromFrame": 3103,
+              "toFrame": 3106
+            },
+            {
+              "text": "最后",
+              "fromFrame": 3106,
+              "toFrame": 3118
+            }
+          ]
+        },
+        {
+          "fromFrame": 3134,
+          "toFrame": 3162,
+          "text": "评论区聊聊",
+          "words": [
+            {
+              "text": "评论区",
+              "fromFrame": 3134,
+              "toFrame": 3149
+            },
+            {
+              "text": "聊聊",
+              "fromFrame": 3149,
+              "toFrame": 3162
+            }
+          ]
         }
       ],
       "pins": [],
-      "audio": "S14.mp3"
+      "audio": "S17.mp3"
     }
   ]
 }

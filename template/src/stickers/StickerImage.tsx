@@ -11,9 +11,10 @@ export const StickerImage: React.FC<{
   width?: number;
   rotate?: number;
   float?: boolean; // 落定后轻微浮动
-}> = ({ src, startFrame = 0, x, y = 560, width = 460, rotate = 0, float = true }) => {
+  noEnter?: boolean; // 跨句持续元素: 跳过入场动画直接定格
+}> = ({ src, startFrame = 0, x, y = 560, width = 460, rotate = 0, float = true, noEnter = false }) => {
   const frame = useCurrentFrame();
-  const p = interpolate(frame, [startFrame, startFrame + 12], [0, 1], {
+  const p = noEnter ? 1 : interpolate(frame, [startFrame, startFrame + 12], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: overshoot,

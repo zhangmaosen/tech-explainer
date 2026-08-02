@@ -2,17 +2,21 @@
 
 通用规范，不含具体文案。字幕是视频号完播的命门（大量用户静音刷）。
 
-## 一、显示模式
-- **一屏一句**：任意时刻屏幕只显示当前短句（S 号），不堆多句。
-- **句内逐词高亮（卡拉OK式）**：当前正在朗读的词高亮 —— 由 timeline.json 的词级
-  时间戳驱动（每个词 `fromFrame/toFrame`）。三态：
+## 一、显示模式（chunking 分组）
+- **一屏一组（≤13 字）**：字幕不按整句显示——build_timeline.py 把每句的词按 ≤13 字
+  切成显示组（chunks），口播走到哪组就显示哪组。长句绝不整句 3–4 行堆屏
+  （v1 判例：96px 字体 + 25 字句 = 4 行字幕压住画面）。
+- **组内逐词高亮（卡拉OK式）**：组内当前朗读词高亮 —— 词级时间戳驱动。三态：
   - 已读词：常态色（如浅灰白）
-  - 当前词：高亮色 + 轻微放大（scale 1.08–1.15）+ 可选描边/底色块
+  - 当前词：高亮色 + 轻微放大（scale 1.14）+ 描边
   - 未读词：常态色（可略暗）
+- **字幕去标点**（解说号惯例）；标点只用于口播停顿与 chunking 切分。
 
 ## 二、可读性硬指标（竖屏 1080×1920）
-- **口播字幕有效字高 ≥ 96px**（≥5% 帧高）；关键词高亮态更大。
-- **辅助文字 ≥ 58px**（≥3%）。
+- **口播字幕标准字号 72px**（一行 12–13 字，实片验证档）。96px 曾导致一行仅
+  9–10 字、长句堆 3–4 行（v1 判例）；72px 在手机小窗仍清晰可读。
+- **关键词高亮态可更大**；**辅助文字 ≥ 58px**（≥3%）。
+- 每组 ≤13 字，最多 2 行；容器宽 1020px（左右各留 30px）。
 - **强描边或半透明底 scrim**：字压在任何背景上都要有足够对比度（描边 4–6px 或
   背景暗化块）。
 - **安全区**：字幕基线放在竖屏**下三分之一偏上**（约 y=1250–1550），避开顶部
@@ -26,13 +30,20 @@
 ## 四、KaraokeCaption 组件契约
 组件 `components/caption/KaraokeCaption.tsx` 输入：
 ```ts
-{ words: { text: string; fromFrame: number; toFrame: number }[],
-  activeColor, idleColor, fontSizePx, strokePx, y }
+{ chunks: { fromFrame, toFrame, text, words: { text, fromFrame, toFrame }[] }[],
+  activeColor, idleColor, readColor, fontSizePx=72, strokePx=4, y=1420 }
 ```
-按 `useCurrentFrame()` 判断每个词三态并渲染。词级数据来自 timeline.json。
+按 `useCurrentFrame()` 选当前组，组内判断每个词三态。chunks 来自 timeline.json
+（build_timeline.py 的 chunk_words 产出，含去标点与尾部再平衡）。
 
 ## 五、自检
 - [ ] 一帧缩到 480px 宽（模拟手机），每句读得清？
 - [ ] 高亮词跟着口播逐词走？
 - [ ] 字幕没被顶部/底部安全区裁到？
 - [ ] 字高达标（口播≥96px / 辅助≥58px，量渲染帧实际像素）？
+
+## 六、封面图（cover.png）
+- 交付双件套：promo.mp4 + cover.png。封面用独立 Cover composition 渲静帧，
+  **不从成片截帧**。
+- 封面钩子 ≤8 字、字号 240px+、主贴纸占屏 40%+；规则见 douyin-video-rules H4。
+- 自检：缩到 ~200px 宽标题仍一眼可读。

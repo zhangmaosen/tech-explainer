@@ -114,11 +114,13 @@
 **操作**（细节见 `tts-timing.md`）：
 1. `scripts/tts_client.py` 对每个短句**独立合成**（后端 `edge`，音色见 tts-timing）：
    产出 `work/<slug>/audio/S01.mp3 …` + 每句的 WordBoundary 词级时间戳 json。
-   单句失败只重试该句（应对 Edge 偶发限流）。
+   单句失败只重试该句（应对 Edge 偶发限流）。**中文必须 `boundary='WordBoundary'`**。
 2. ffprobe 量每句实际时长。
 3. `scripts/build_timeline.py` 合成 `work/<slug>/timeline.json`：
    - 每句的起止帧（30fps，按累计音频时长换算，句间可留呼吸间隔）
-   - **字幕锚点**：句内每个词的 `{word, fromFrame, toFrame}`（卡拉OK高亮用）
+   - **字幕锚点**：句内每个词的 `{word, fromFrame, toFrame}`
+   - **字幕分组 chunks**：按 ≤13 字把词切成显示组（去标点、尾部再平衡避免孤字屏），
+     字幕一屏一组、逐组跟随口播
    - **贴纸钉帧锚点**：分镜标的关键词 → 对应词的时间戳帧号
 4. 拼接整条口播音轨（含句间停顿）供 Remotion 用。
 
@@ -145,8 +147,10 @@ Composition）；素材（阶段 3）与 timeline.json（阶段 4）就绪。
 4. **静帧验收**：每镜 `npx remotion still` 出帧，肉眼查构图/字幕锐度/穿帮。
 5. **每轮整片渲染** + ffmpeg 抽帧回看。竖屏字幕硬烧（见 caption-rules.md）。
 6. 确定性渲染：固定种子。
+7. **封面**：用 `Cover` composition 渲独立封面 `out/cover.png`——钩子 ≤8 字、
+   超大字、主贴纸占屏 40%+，不依赖视频首帧（规则见 douyin-video-rules H4）。
 
-**产出**：整片 mp4（每轮一版）+ `out/qa/` 静帧。
+**产出**：整片 mp4（每轮一版）+ `out/qa/` 静帧 + `out/cover.png`。
 
 **常见坑**：跳过配方卡自己写（回踩已知坑）；字幕太小（竖屏静音刷看不见）；
 贴纸没卡在关键词上；镜头时长与音频不符。
@@ -163,8 +167,9 @@ Composition）；素材（阶段 3）与 timeline.json（阶段 4）就绪。
    对齐、完播卡点、一种手法有无被重复、结尾引导。格式 `编号 ✓/✗(句号/帧号)`。
 3. 音画对齐终检：逐句 SFX/贴纸对帧回放，确认无错位。
 4. 修复回小循环：结构问题回阶段 1/2，画面回阶段 5，配音回阶段 4。
-5. 终渲交付：竖屏 mp4 成片（如需另出无 BGM 版，用 inputProp 从同一时间线渲）。
+5. 终渲交付：**双件套**——竖屏 `promo.mp4` 成片 + `cover.png` 封面
+   （如需另出无 BGM 版，用 inputProp 从同一时间线渲）。
 
-**产出**：自检报告（准则 checklist + 帧号证据）+ 终渲成片。
+**产出**：自检报告（准则 checklist + 帧号证据）+ **成片 + 封面图**。
 
 **常见坑**：自检报告全 ✓ 无证据；把验收留到最后一次做；钩子不够狠却放行。

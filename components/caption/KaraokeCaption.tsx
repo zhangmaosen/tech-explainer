@@ -25,7 +25,7 @@ export const KaraokeCaption: React.FC<{
   idleColor = "#E8E8E8",
   readColor = "#FFFFFF",
   fontSizePx = 72,
-  strokePx = 5,
+  strokePx = 4,
   y = 1420,
 }) => {
   const frame = useCurrentFrame();
@@ -43,8 +43,8 @@ export const KaraokeCaption: React.FC<{
       style={{
         position: "absolute",
         top: y,
-        left: 60,
-        width: 960,
+        left: 30,
+        width: 1020,
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
